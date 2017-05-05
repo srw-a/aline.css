@@ -1,4 +1,4 @@
-![ALINE.CSS](https://github.com/ENJOY100/aline.css/blob/master/aline-logo-002.png)
+![ALINE.CSS](https://github.com/ENJOY100/aline.css/blob/master/alinelogo.png)
 Ligth CSS-Grid Framework
 
 Current Version: `0.1`
