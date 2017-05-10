@@ -1,0 +1,23 @@
+{
+  "name": "aline",
+  "homepage": "https://github.com/ENJOY100/aline.css",
+  "authors": [
+    "Vladimir Ozhiganov"
+  ],
+  "description": "Light CSS-Framework",
+  "main": "aline.css",
+  "keywords": [
+    "css",
+    "light",
+    "css",
+    "framework"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
