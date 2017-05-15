@@ -1,7 +1,7 @@
 /*
   * Aline.css, Light CSS-Grid Framework;
   * Author: Vladimir "srw" Ozhiganov;
-  * Version: 0.1.1;
+  * Version: 0.1.2;
 */
 html {
   	position: relative;
@@ -23,7 +23,9 @@ body {
 button {
   	cursor: pointer;
   	outline: none;
-  	border: none
+  	border: none;
+  	background: none;
+  	padding: 0
 }
 button:hover,button:active,button:link,button:focus,a:hover,a:active,a:link,a:focus {
   	text-decoration: none;
@@ -351,12 +353,6 @@ ion {
 	.col-m-100 {
 	  	width:100%
 	}
-	.hidden-m {
-	    display: none!important
-	}
-	.hidden-m-s-xs {
-		display: none!important
-	}
 }
 @media only screen and (max-width: 992px) {
   	.container, .container-p {
@@ -446,12 +442,6 @@ ion {
 	.col-s-100 {
 	  	width:100%
 	}
-  	.hidden-s {
-    	display: none!important
-  	}
-  	.hidden-s-xs {
-    	display: none!important
-  	}
 }
 @media only screen and (max-width: 768px) {
   	.container, .container-p {
@@ -541,9 +531,6 @@ ion {
 	.col-xs-100 {
 	  	width:100%
 	}
-  	.hidden-xs {
-    	display: none!important
-  	}
 }
 @media only screen and (min-width : 1200px) {
   	.container, .container-p {
@@ -633,10 +620,51 @@ ion {
 	.col-l-100 {
 	  	width:100%
 	}
-  	.hidden-l {
+}
+@media only screen and (min-width: 1200px) {
+	.hidden-l, .hidden-l-m-s-xs, .hidden-l-m-s, .hidden-l-m, .hidden-l-m-xs, .hidden-l-s, .hidden-l-s-xs, .hidden-l-xs {
     	display: none!important
   	}
-  	.hidden-l-m-s-xs {
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+	.hidden-m, .hidden-l-m-s-xs, .hidden-l-m-s, .hidden-l-m, .hidden-l-m-xs, .hidden-m-s, .hidden-m-s-xs, .hidden-m-xs {
+	    display: none!important
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+	.hidden-s, .hidden-l-m-s-xs, .hidden-l-m-s, .hidden-l-s, .hidden-l-s-xs, .hidden-m-s-xs, .hidden-m-s, .hidden-s-xs {
     	display: none!important
   	}
+}
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+	.hidden-xs, .hidden-l-m-s-xs, .hidden-l-m-xs, .hidden-l-s-xs, .hidden-l-xs, .hidden-m-s-xs, .hidden-m-xs, .hidden-s-xs {
+    	display: none!important
+  	}
+}
+.g-icon {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 30px;
+	height: 20px;
+	font-size: 0;
+	cursor: pointer;
+}
+.g-icon span {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	border-radius: 0;
+	left: 0
+}
+.g-icon span:nth-child(1) {
+	top: 0
+}
+.g-icon span:nth-child(2) {
+	top: 9px
+}
+.g-icon span:nth-child(3) {
+	top: 18px
 }
