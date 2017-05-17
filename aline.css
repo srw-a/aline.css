@@ -37,7 +37,7 @@ label {
 img {
  	 max-width: 100%
 }
-input:focus {
+input:focus, textarea:focus {
   	outline: 0
 }
 .container {
@@ -446,6 +446,9 @@ ion {
 	.col-m-100 {
 	  	width:100%
 	}
+	.offset-m-none {
+		margin-left: 0
+	}
 }
 @media only screen and (max-width: 992px) {
   	.container, .container-p {
@@ -535,6 +538,9 @@ ion {
 	.col-s-100 {
 	  	width:100%
 	}
+	.offset-s-none {
+		margin-left: 0
+	}
 }
 @media only screen and (max-width: 768px) {
   	.container, .container-p {
@@ -623,6 +629,9 @@ ion {
 	}
 	.col-xs-100 {
 	  	width:100%
+	}
+	.offset-xs-none {
+		margin-left: 0
 	}
 }
 @media only screen and (min-width : 1200px) {
