@@ -3004,24 +3004,24 @@ body textarea:required:valid {
 	}
 }
 @media only screen and (min-width: 992px) and (max-width: 1201px) {
-	.hidden-m, .hidden-l-m-s-xs, .hidden-l-m-s, .hidden-l-m, .hidden-l-m-xs, .hidden-m-s, .hidden-m-s-xs, .hidden-m-xs {
-	    display: none!important
-	}
+	.hidden-l,.hidden-l-m,.hidden-l-s,.hidden-l-xs,.hidden-l-xxs,.hidden-l-m-s,.hidden-l-m-xs,.hidden-l-m-xxs,.hidden-l-s-xs,.hidden-l-s-xxs,.hidden-l-xs-xxs,.hidden-l-m-s-xs,.hidden-l-m-s-xxs,.hidden-l-m-xs-xxs,.hidden-l-s-xs-xxs,.hidden-l-m-s-xs-xxs {
+		display: none!important
+	} 
 }
 @media only screen and (min-width: 768px) and (max-width: 993px) {
-	.hidden-s, .hidden-l-m-s-xs, .hidden-l-m-s, .hidden-l-s, .hidden-l-s-xs, .hidden-m-s-xs, .hidden-m-s, .hidden-s-xs {
-    	display: none!important
-  	}
+	.hidden-s,.hidden-l-s,.hidden-m-s,.hidden-s-xs,.hidden-s-xxs,.hidden-l-m-s,.hidden-l-s-xs,.hidden-l-s-xxs,.hidden-m-s-xs,.hidden-m-s-xxs,.hidden-s-xs-xxs,.hidden-l-m-s-xs,.hidden-l-m-s-xxs,.hidden-l-s-xs-xxs,.hidden-m-s-xs-xxs,.hidden-l-m-s-xs-xxs {
+		display: none!important
+	}
 }
 @media only screen and (min-width: 480px) and (max-width: 769px) {
-	.hidden-xs, .hidden-l-m-s-xs, .hidden-l-m-xs, .hidden-l-s-xs, .hidden-l-xs, .hidden-m-s-xs, .hidden-m-xs, .hidden-s-xs {
-    	display: none!important
-  	}
+	.hidden-xs,.hidden-l-xs,.hidden-m-xs,.hidden-s-xs,.hidden-xs-xxs,.hidden-l-m-xs,.hidden-l-s-xs,.hidden-l-xs-xxs,.hidden-m-s-xs,.hidden-m-s-xxs,.hidden-s-xs-xxs,.hidden-l-m-s-xs,.hidden-l-m-xs-xxs,.hidden-l-s-xs-xxs,.hidden-m-s-xs-xxs,.hidden-l-m-s-xs-xxs {
+		display: none!important
+	}
 }
 @media only screen and (min-width: 0px) and (max-width: 481px) {
-	.hidden-xxs, .hidden-l-m-s-xxs, .hidden-l-m-xxs, .hidden-l-s-xxs, .hidden-l-xxs, .hidden-m-s-xxs, .hidden-m-xxs, .hidden-s-xxs {
-    	display: none!important
-  	}
+	.hidden-xxs,.hidden-l-xxs,.hidden-m-xxs,.hidden-s-xxs,.hidden-xs-xxs,.hidden-l-m-xxs,.hidden-l-s-xxs,.hidden-l-xs-xxs,.hidden-m-s-xxs,.hidden-m-xs-xxs,.hidden-s-xs-xxs,.hidden-l-m-s-xxs,.hidden-l-m-xs-xxs,.hidden-l-s-xs-xxs,.hidden-m-s-xs-xxs,.hidden-l-m-s-xs-xxs {
+		display: none!important
+	}
 }
 /*Gamburger icon (aline.css)*/
 .g-icon {
