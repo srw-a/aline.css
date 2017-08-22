@@ -357,88 +357,88 @@ h6,.h6 {
   	left: 100%
 }
 .pull-5 {
-	left: 5%
+	right: 5%
 }
 .pull-8 {
-	left: 8.3333333%
+	right: 8.3333333%
 }
 .pull-10 {
-  	left: 10%
+  	right: 10%
 }
 .pull-15 {
-  	left: 15%
+  	right: 15%
 }
 .pull-16 {
-  	left: 16.6666667%
+  	right: 16.6666667%
 }
 .pull-20 {
-  	left: 20%
+  	right: 20%
 }
 .pull-25 {
-  	left: 25%
+  	right: 25%
 }
 .pull-30 {
-	left: 30%
+	right: 30%
 }
 .pull-33, .pull-34 {
-  	left: 33.3333333%
+  	right: 33.3333333%
 }
 .pull-35 {
-	left: 35%
+	right: 35%
 }
 .pull-40 {
-	left: 40%
+	right: 40%
 }
 .pull-42 {
-  	left: 41.6666666%
+  	right: 41.6666666%
 }
 .pull-45 {
-	left: 45%
+	right: 45%
 }
 .pull-50 {
- 	left: 50%
+ 	right: 50%
 }
 .pull-55 {
-	left: 55%
+	right: 55%
 }
 .pull-58 {
-  	left: 58.3333333%
+  	right: 58.3333333%
 }
 .pull-60 {
-	left: 60%
+	right: 60%
 }
 .pull-65 {
-	left: 65%
+	right: 65%
 }
 .pull-66, .pull-67 {
- 	left: 66.6666666%
+ 	right: 66.6666666%
 }
 .pull-70 {
-	left: 70%
+	right: 70%
 }
 .pull-75 {
-	left: 75%
+	right: 75%
 }
 .pull-80 {
-	left: 80%
+	right: 80%
 }
 .pull-84 {
-  	left: 83.3333333%
+  	right: 83.3333333%
 }
 .pull-85 {
-	left: 85%
+	right: 85%
 }
 .pull-90 {
-	left: 90%
+	right: 90%
 }
 .pull-92 {
-	left: 91.6666667%
+	right: 91.6666667%
 }
 .pull-95 {
-	left: 95%
+	right: 95%
 }
 .pull-100 {
-  	left: 100%
+  	right: 100%
 }
 .va-top {
   	vertical-align: top!important
@@ -468,13 +468,13 @@ h6,.h6 {
   	padding-right: 0!important
 }
 .no-border {
-  	border: none
+  	border: none!important
 }
 .no-margin {
-  	margin: 0
+  	margin: 0!important
 }
 .no-pad {
-  	padding: 0
+  	padding: 0!important
 }
 .t-center {
   	text-align: center
