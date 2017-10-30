@@ -1,0 +1,33 @@
+/*
+  * aline.btns.css, addon for aline.css;
+  * Author: Vladimir "srw" Ozhiganov;
+  * Version: 1.0.0;
+*/
+/*Gamburger*/
+.g-icon {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	width: 30px;
+	height: 20px;
+	font-size: 0;
+	cursor: pointer;
+}
+.g-icon span {
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	border-radius: 0;
+	left: 0
+}
+.g-icon span:nth-child(1) {
+	top: 0
+}
+.g-icon span:nth-child(2) {
+	top: 9px
+}
+.g-icon span:nth-child(3) {
+	top: 18px
+}
