@@ -217,7 +217,7 @@ h6,.h6 {
 	-webkit-justify-content: flex-start;
 	justify-content: flex-start
 }
-.h-center, .js-center, .h-c, .js-c {
+.h-center, .jc-center, .h-c, .jc-c {
 	-webkit-justify-content: center;
 	justify-content: center
 }
@@ -1326,7 +1326,7 @@ body textarea:required:valid {
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start
 	}
-	.h-xl-center, .js-xl-center, .h-xl-c, .js-xl-c {
+	.h-xl-center, .jc-xl-center, .h-xl-c, .jc-xl-c {
 		-webkit-justify-content: center;
 		justify-content: center
 	}
@@ -1860,7 +1860,7 @@ body textarea:required:valid {
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start
 	}
-	.h-l-center, .js-l-center, .h-l-c, .js-l-c {
+	.h-l-center, .jc-l-center, .h-l-c, .jc-l-c {
 		-webkit-justify-content: center;
 		justify-content: center
 	}
@@ -2389,7 +2389,7 @@ body textarea:required:valid {
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start
 	}
-	.h-m-center, .js-m-center, .h-m-c, .js-m-c {
+	.h-m-center, .jc-m-center, .h-m-c, .jc-m-c {
 		-webkit-justify-content: center;
 		justify-content: center
 	}
@@ -2918,7 +2918,7 @@ body textarea:required:valid {
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start
 	}
-	.h-s-center, .js-s-center, .h-s-c, .js-s-c {
+	.h-s-center, .jc-s-center, .h-s-c, .jc-s-c {
 		-webkit-justify-content: center;
 		justify-content: center
 	}
@@ -3447,7 +3447,7 @@ body textarea:required:valid {
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start
 	}
-	.h-xs-center, .js-xs-center, .h-xs-c, .js-xs-c {
+	.h-xs-center, .jc-xs-center, .h-xs-c, .jc-xs-c {
 		-webkit-justify-content: center;
 		justify-content: center
 	}
@@ -3976,7 +3976,7 @@ body textarea:required:valid {
 		-webkit-justify-content: flex-start;
 		justify-content: flex-start
 	}
-	.h-xxs-center, .js-xxs-center, .h-xxs-c, .js-xxs-c {
+	.h-xxs-center, .jc-xxs-center, .h-xxs-c, .jc-xxs-c {
 		-webkit-justify-content: center;
 		justify-content: center
 	}
