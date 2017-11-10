@@ -12,6 +12,6 @@ add this code to you project:
 
 for aline.btns.css:
 
-`<link rel="stylesheet" href=yoursource/aline-btns.min.css">`
+`<link rel="stylesheet" href=yoursource/aline.btns.min.css">`
 
 
