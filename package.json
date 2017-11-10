@@ -1,0 +1,29 @@
+{
+  "name": "aline.css",
+  "version": "1.0.1",
+  "description": "CSS-Grid Framework",
+  "main": "aline.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ENJOY100/aline.css.git"
+  },
+  "keywords": [
+    "aline",
+    "css",
+    "framework",
+    "css-grid",
+    "grid",
+    "adaptive",
+    "flex",
+    "flex-framework"
+  ],
+  "author": "Vladimir Ozhiganov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ENJOY100/aline.css/issues"
+  },
+  "homepage": "https://github.com/ENJOY100/aline.css#readme"
+}
