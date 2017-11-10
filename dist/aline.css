@@ -3,7 +3,7 @@
   * Author: Vladimir "srw" Ozhiganov;
   * Docs: ozhiganov.com/aline/docs
   * Contacts: m@ozhiganov.com
-  * Version: 1.0.1 (beta);
+  * Version: 1.0.2 (beta);
 */
 html {
 	position: relative;
@@ -92,7 +92,7 @@ h6, .h6 {
 	margin-right: auto
 }
 .cols-wrap, .c-wrap, .c-w {
-	font-size: 0;
+	font-size: 0!important;
 	padding: 0!important
 }
 .cols-wrap span, .c-wrap span, .c-w span {
@@ -119,7 +119,7 @@ h6, .h6 {
 }
 /*FOR aline.old-versions*/
 .col-wrap {
-	font-size: 0;
+	font-size: 0!important;
 	padding: 0!important;
 	display: block!important;
 	width: auto!important
@@ -138,7 +138,7 @@ h6, .h6 {
 	padding: 0 15px
 }
 .p-clear, .p-c {
-	font-size: 0
+	font-size: 0!important
 }
 .pe-auto, .pe-a {
 	pointer-events: auto
@@ -147,8 +147,8 @@ h6, .h6 {
 	pointer-events: none
 }
 .edges-0, .e-0 {
-	padding-left: 0;
-	padding-right: 0
+	padding-left: 0!important;
+	padding-right: 0!important
 }
 .edges-5, .e-5 {
 	padding: 0 20px
@@ -499,7 +499,7 @@ h6, .h6 {
 	order: 1
 }
 .push-0, .push-none, .push-n {
-	left: 0
+	left: 0!important
 }
 .push-5 {
 	left: 5%
@@ -586,7 +586,7 @@ h6, .h6 {
 	left: 100%
 }
 .pull-0, .pull-none, .pull-n {
-	right: 0
+	right: 0!important
 }
 .pull-5 {
 	right: 5%
@@ -912,7 +912,7 @@ h6, .h6 {
 	margin: 0!important
 }
 .mt-0 {
-	margin-top: 0
+	margin-top: 0!important
 }
 .mt-5 {
 	margin-top: 5px
@@ -978,7 +978,7 @@ h6, .h6 {
 	margin-right: 50px
 }
 .mb-0 {
-	margin-bottom: 0
+	margin-bottom: 0!important
 }
 .mb-5 {
 	margin-bottom: 5px
@@ -1011,7 +1011,7 @@ h6, .h6 {
 	margin-bottom: 50px
 }
 .ml-0 {
-	margin-left: 0
+	margin-left: 0!important
 }
 .ml-5 {
 	margin-left: 5px
@@ -1047,7 +1047,7 @@ h6, .h6 {
 	padding: 0!important
 }
 .pt-0 {
-	padding-top: 0
+	padding-top: 0!important
 }
 .pt-5 {
 	padding-top: 5px
@@ -1080,7 +1080,7 @@ h6, .h6 {
 	padding-top: 50px
 }
 .pr-0 {
-	padding-right: 0
+	padding-right: 0!important
 }
 .pr-5 {
 	padding-right: 5px
@@ -1113,7 +1113,7 @@ h6, .h6 {
 	padding-right: 50px
 }
 .pb-0 {
-	padding-bottom: 0
+	padding-bottom: 0!important
 }
 .pb-5 {
 	padding-bottom: 5px
@@ -1146,7 +1146,7 @@ h6, .h6 {
 	padding-bottom: 50px
 }
 .pl-0 {
-	padding-left: 0
+	padding-left: 0!important
 }
 .pl-5 {
 	padding-left: 5px
@@ -1316,13 +1316,13 @@ body textarea:required:valid {
 		pointer-events: none
 	}
 	.offset-xl-0, .offset-xl-none, .of-xl-n, .of-xl-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.push-xl-0, .push-xl-none, .push-xl-n {
-		left: 0
+		left: 0!important
 	}
 	.pull-xl-0, .pull-xl-none, .pull-xl-n {
-		right: 0
+		right: 0!important
 	}
 	.t-xl-center, .t-xl-c {
 		text-align: center!important
@@ -1463,7 +1463,7 @@ body textarea:required:valid {
 		-webkit-align-self: stretch;
 		align-self: stretch
 	}
-	.order-xl--1, .or-xl-1 {
+	.order-xl--1, .or-xl--1 {
 		order: -1
 	}
 	.order-xl-0, .or-xl-0 {
@@ -1476,7 +1476,7 @@ body textarea:required:valid {
 		margin: 0!important
 	}
 	.mt-xl-0 {
-		margin-top: 0
+		margin-top: 0!important
 	}
 	.mt-xl-5 {
 		margin-top: 5px
@@ -1509,7 +1509,7 @@ body textarea:required:valid {
 		margin-top: 50px
 	}
 	.mr-xl-0 {
-		margin-right: 0
+		margin-right: 0!important
 	}
 	.mr-xl-5 {
 		margin-right: 5px
@@ -1542,7 +1542,7 @@ body textarea:required:valid {
 		margin-right: 50px
 	}
 	.mb-xl-0 {
-		margin-bottom: 0
+		margin-bottom: 0!important
 	}
 	.mb-xl-5 {
 		margin-bottom: 5px
@@ -1575,7 +1575,7 @@ body textarea:required:valid {
 		margin-bottom: 50px
 	}
 	.ml-xl-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.ml-xl-5 {
 		margin-left: 5px
@@ -1611,7 +1611,7 @@ body textarea:required:valid {
 		padding: 0!important
 	}
 	.pt-xl-0 {
-		padding-top: 0
+		padding-top: 0!important
 	}
 	.pt-xl-5 {
 		padding-top: 5px
@@ -1644,7 +1644,7 @@ body textarea:required:valid {
 		padding-top: 50px
 	}
 	.pr-xl-0 {
-		padding-right: 0
+		padding-right: 0!important
 	}
 	.pr-xl-5 {
 		padding-right: 5px
@@ -1677,7 +1677,7 @@ body textarea:required:valid {
 		padding-right: 50px
 	}
 	.pb-xl-0 {
-		padding-bottom: 0
+		padding-bottom: 0!important
 	}
 	.pb-xl-5 {
 		padding-bottom: 5px
@@ -1710,7 +1710,7 @@ body textarea:required:valid {
 		padding-bottom: 50px
 	}
 	.pl-xl-0 {
-		padding-left: 0
+		padding-left: 0!important
 	}
 	.pl-xl-5 {
 		padding-left: 5px
@@ -1761,8 +1761,8 @@ body textarea:required:valid {
 		font-size: 12px
 	}
 	.edges-xl-0, .e-xl-0 {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 0!important;
+		padding-right: 0!important
 	}
 	.edges-xl-5, .e-xl-5 {
 		padding: 0 20px
@@ -1895,13 +1895,13 @@ body textarea:required:valid {
 		pointer-events: none
 	}
 	.offset-l-0, .offset-l-none, .of-l-n, .of-l-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.push-l-0, .push-l-none, .push-l-n {
-		left: 0
+		left: 0!important
 	}
 	.pull-l-0, .pull-l-none, .pull-l-n {
-		right: 0
+		right: 0!important
 	}
 	.t-l-center, .t-l-c {
 		text-align: center!important
@@ -2042,7 +2042,7 @@ body textarea:required:valid {
 		-webkit-align-self: stretch;
 		align-self: stretch
 	}
-	.order-l--1, .or-l-1 {
+	.order-l--1, .or-l--1 {
 		order: -1
 	}
 	.order-l-0, .or-l-0 {
@@ -2055,7 +2055,7 @@ body textarea:required:valid {
 		margin: 0!important
 	}
 	.mt-l-0 {
-		margin-top: 0
+		margin-top: 0!important
 	}
 	.mt-l-5 {
 		margin-top: 5px
@@ -2088,7 +2088,7 @@ body textarea:required:valid {
 		margin-top: 50px
 	}
 	.mr-l-0 {
-		margin-right: 0
+		margin-right: 0!important
 	}
 	.mr-l-5 {
 		margin-right: 5px
@@ -2121,7 +2121,7 @@ body textarea:required:valid {
 		margin-right: 50px
 	}
 	.mb-l-0 {
-		margin-bottom: 0
+		margin-bottom: 0!important
 	}
 	.mb-l-5 {
 		margin-bottom: 5px
@@ -2154,7 +2154,7 @@ body textarea:required:valid {
 		margin-bottom: 50px
 	}
 	.ml-l-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.ml-l-5 {
 		margin-left: 5px
@@ -2190,7 +2190,7 @@ body textarea:required:valid {
 		padding: 0!important
 	}
 	.pt-l-0 {
-		padding-top: 0
+		padding-top: 0!important
 	}
 	.pt-l-5 {
 		padding-top: 5px
@@ -2223,7 +2223,7 @@ body textarea:required:valid {
 		padding-top: 50px
 	}
 	.pr-l-0 {
-		padding-right: 0
+		padding-right: 0!important
 	}
 	.pr-l-5 {
 		padding-right: 5px
@@ -2256,7 +2256,7 @@ body textarea:required:valid {
 		padding-right: 50px
 	}
 	.pb-l-0 {
-		padding-bottom: 0
+		padding-bottom: 0!important
 	}
 	.pb-l-5 {
 		padding-bottom: 5px
@@ -2289,7 +2289,7 @@ body textarea:required:valid {
 		padding-bottom: 50px
 	}
 	.pl-l-0 {
-		padding-left: 0
+		padding-left: 0!important
 	}
 	.pl-l-5 {
 		padding-left: 5px
@@ -2340,8 +2340,8 @@ body textarea:required:valid {
 		font-size: 12px
 	}
 	.edges-l-0, .e-l-0 {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 0!important;
+		padding-right: 0!important
 	}
 	.edges-l-5, .e-l-5 {
 		padding: 0 20px
@@ -2469,13 +2469,13 @@ body textarea:required:valid {
 		pointer-events: none
 	}
 	.offset-m-0, .offset-m-none, .of-m-n, .of-m-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.push-m-0, .push-m-none, .push-m-n {
-		left: 0
+		left: 0!important
 	}
 	.pull-m-0, .pull-m-none, .pull-m-n {
-		right: 0
+		right: 0!important
 	}
 	.t-m-center, .t-m-c {
 		text-align: center!important
@@ -2616,7 +2616,7 @@ body textarea:required:valid {
 		-webkit-align-self: stretch;
 		align-self: stretch
 	}
-	.order-m--1, .or-m-1 {
+	.order-m--1, .or-m--1 {
 		order: -1
 	}
 	.order-m-0, .or-m-0 {
@@ -2629,7 +2629,7 @@ body textarea:required:valid {
 		margin: 0!important
 	}
 	.mt-m-0 {
-		margin-top: 0
+		margin-top: 0!important
 	}
 	.mt-m-5 {
 		margin-top: 5px
@@ -2662,7 +2662,7 @@ body textarea:required:valid {
 		margin-top: 50px
 	}
 	.mr-m-0 {
-		margin-right: 0
+		margin-right: 0!important
 	}
 	.mr-m-5 {
 		margin-right: 5px
@@ -2695,7 +2695,7 @@ body textarea:required:valid {
 		margin-right: 50px
 	}
 	.mb-m-0 {
-		margin-bottom: 0
+		margin-bottom: 0!important
 	}
 	.mb-m-5 {
 		margin-bottom: 5px
@@ -2728,7 +2728,7 @@ body textarea:required:valid {
 		margin-bottom: 50px
 	}
 	.ml-m-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.ml-m-5 {
 		margin-left: 5px
@@ -2764,7 +2764,7 @@ body textarea:required:valid {
 		padding: 0!important
 	}
 	.pt-m-0 {
-		padding-top: 0
+		padding-top: 0!important
 	}
 	.pt-m-5 {
 		padding-top: 5px
@@ -2797,7 +2797,7 @@ body textarea:required:valid {
 		padding-top: 50px
 	}
 	.pr-m-0 {
-		padding-right: 0
+		padding-right: 0!important
 	}
 	.pr-m-5 {
 		padding-right: 5px
@@ -2830,7 +2830,7 @@ body textarea:required:valid {
 		padding-right: 50px
 	}
 	.pb-m-0 {
-		padding-bottom: 0
+		padding-bottom: 0!important
 	}
 	.pb-m-5 {
 		padding-bottom: 5px
@@ -2863,7 +2863,7 @@ body textarea:required:valid {
 		padding-bottom: 50px
 	}
 	.pl-m-0 {
-		padding-left: 0
+		padding-left: 0!important
 	}
 	.pl-m-5 {
 		padding-left: 5px
@@ -2914,8 +2914,8 @@ body textarea:required:valid {
 		font-size: 12px
 	}
 	.edges-m-0, .e-m-0 {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 0!important;
+		padding-right: 0!important
 	}
 	.edges-m-5, .e-m-5 {
 		padding: 0 20px
@@ -3043,13 +3043,13 @@ body textarea:required:valid {
 		pointer-events: none
 	}
 	.offset-s-0, .offset-s-none, .of-s-n, .of-s-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.push-s-0, .push-s-none, .push-s-n {
-		left: 0
+		left: 0!important
 	}
 	.pull-s-0, .pull-s-none, .pull-s-n {
-		right: 0
+		right: 0!important
 	}
 	.t-s-center, .t-s-c {
 		text-align: center!important
@@ -3190,7 +3190,7 @@ body textarea:required:valid {
 		-webkit-align-self: stretch;
 		align-self: stretch
 	}
-	.order-s--1, .or-s-1 {
+	.order-s--1, .or-s--1 {
 		order: -1
 	}
 	.order-s-0, .or-s-0 {
@@ -3203,7 +3203,7 @@ body textarea:required:valid {
 		margin: 0!important
 	}
 	.mt-s-0 {
-		margin-top: 0
+		margin-top: 0!important
 	}
 	.mt-s-5 {
 		margin-top: 5px
@@ -3236,7 +3236,7 @@ body textarea:required:valid {
 		margin-top: 50px
 	}
 	.mr-s-0 {
-		margin-right: 0
+		margin-right: 0!important
 	}
 	.mr-s-5 {
 		margin-right: 5px
@@ -3269,7 +3269,7 @@ body textarea:required:valid {
 		margin-right: 50px
 	}
 	.mb-s-0 {
-		margin-bottom: 0
+		margin-bottom: 0!important
 	}
 	.mb-s-5 {
 		margin-bottom: 5px
@@ -3302,7 +3302,7 @@ body textarea:required:valid {
 		margin-bottom: 50px
 	}
 	.ml-s-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.ml-s-5 {
 		margin-left: 5px
@@ -3338,7 +3338,7 @@ body textarea:required:valid {
 		padding: 0!important
 	}
 	.pt-s-0 {
-		padding-top: 0
+		padding-top: 0!important
 	}
 	.pt-s-5 {
 		padding-top: 5px
@@ -3371,7 +3371,7 @@ body textarea:required:valid {
 		padding-top: 50px
 	}
 	.pr-s-0 {
-		padding-right: 0
+		padding-right: 0!important
 	}
 	.pr-s-5 {
 		padding-right: 5px
@@ -3404,7 +3404,7 @@ body textarea:required:valid {
 		padding-right: 50px
 	}
 	.pb-s-0 {
-		padding-bottom: 0
+		padding-bottom: 0!important
 	}
 	.pb-s-5 {
 		padding-bottom: 5px
@@ -3437,7 +3437,7 @@ body textarea:required:valid {
 		padding-bottom: 50px
 	}
 	.pl-s-0 {
-		padding-left: 0
+		padding-left: 0!important
 	}
 	.pl-s-5 {
 		padding-left: 5px
@@ -3488,8 +3488,8 @@ body textarea:required:valid {
 		font-size: 10px
 	}
 	.edges-s-0, .e-s-0 {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 0!important;
+		padding-right: 0!important
 	}
 	.edges-s-5, .e-s-5 {
 		padding: 0 20px
@@ -3617,13 +3617,13 @@ body textarea:required:valid {
 		pointer-events: none
 	}
 	.offset-xs-0, .offset-xs-none, .of-xs-n, .of-xs-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.push-xs-0, .push-xs-none, .push-xs-n {
-		left: 0
+		left: 0!important
 	}
 	.pull-xs-0, .pull-xs-none, .pull-xs-n {
-		right: 0
+		right: 0!important
 	}
 	.t-xs-center, .t-xs-c {
 		text-align: center!important
@@ -3764,7 +3764,7 @@ body textarea:required:valid {
 		-webkit-align-self: stretch;
 		align-self: stretch
 	}
-	.order-xs--1, .or-xs-1 {
+	.order-xs--1, .or-xs--1 {
 		order: -1
 	}
 	.order-xs-0, .or-xs-0 {
@@ -3777,7 +3777,7 @@ body textarea:required:valid {
 		margin: 0!important
 	}
 	.mt-xs-0 {
-		margin-top: 0
+		margin-top: 0!important
 	}
 	.mt-xs-5 {
 		margin-top: 5px
@@ -3810,7 +3810,7 @@ body textarea:required:valid {
 		margin-top: 50px
 	}
 	.mr-xs-0 {
-		margin-right: 0
+		margin-right: 0!important
 	}
 	.mr-xs-5 {
 		margin-right: 5px
@@ -3843,7 +3843,7 @@ body textarea:required:valid {
 		margin-right: 50px
 	}
 	.mb-xs-0 {
-		margin-bottom: 0
+		margin-bottom: 0!important
 	}
 	.mb-xs-5 {
 		margin-bottom: 5px
@@ -3876,7 +3876,7 @@ body textarea:required:valid {
 		margin-bottom: 50px
 	}
 	.ml-xs-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.ml-xs-5 {
 		margin-left: 5px
@@ -3912,7 +3912,7 @@ body textarea:required:valid {
 		padding: 0!important
 	}
 	.pt-xs-0 {
-		padding-top: 0
+		padding-top: 0!important
 	}
 	.pt-xs-5 {
 		padding-top: 5px
@@ -3945,7 +3945,7 @@ body textarea:required:valid {
 		padding-top: 50px
 	}
 	.pr-xs-0 {
-		padding-right: 0
+		padding-right: 0!important
 	}
 	.pr-xs-5 {
 		padding-right: 5px
@@ -3978,7 +3978,7 @@ body textarea:required:valid {
 		padding-right: 50px
 	}
 	.pb-xs-0 {
-		padding-bottom: 0
+		padding-bottom: 0!important
 	}
 	.pb-xs-5 {
 		padding-bottom: 5px
@@ -4011,7 +4011,7 @@ body textarea:required:valid {
 		padding-bottom: 50px
 	}
 	.pl-xs-0 {
-		padding-left: 0
+		padding-left: 0!important
 	}
 	.pl-xs-5 {
 		padding-left: 5px
@@ -4062,8 +4062,8 @@ body textarea:required:valid {
 		font-size: 8px
 	}
 	.edges-xs-0, .e-xs-0 {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 0!important;
+		padding-right: 0!important
 	}
 	.edges-xs-5, .e-xs-5 {
 		padding: 0 20px
@@ -4196,13 +4196,13 @@ body textarea:required:valid {
 		pointer-events: none
 	}
 	.offset-xxs-0, .offset-xxs-none, .of-xxs-n, .of-xxs-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.push-xxs-0, .push-xxs-none, .push-xxs-n {
-		left: 0
+		left: 0!important
 	}
 	.pull-xxs-0, .pull-xxs-none, .pull-xxs-n {
-		right: 0
+		right: 0!important
 	}
 	.t-xxs-center, .t-xxs-c {
 		text-align: center!important
@@ -4343,7 +4343,7 @@ body textarea:required:valid {
 		-webkit-align-self: stretch;
 		align-self: stretch
 	}
-	.order-xxs--1, .or-xxs-1 {
+	.order-xxs--1, .or-xxs--1 {
 		order: -1
 	}
 	.order-xxs-0, .or-xxs-0 {
@@ -4356,7 +4356,7 @@ body textarea:required:valid {
 		margin: 0!important
 	}
 	.mt-xxs-0 {
-		margin-top: 0
+		margin-top: 0!important
 	}
 	.mt-xxs-5 {
 		margin-top: 5px
@@ -4389,7 +4389,7 @@ body textarea:required:valid {
 		margin-top: 50px
 	}
 	.mr-xxs-0 {
-		margin-right: 0
+		margin-right: 0!important
 	}
 	.mr-xxs-5 {
 		margin-right: 5px
@@ -4422,7 +4422,7 @@ body textarea:required:valid {
 		margin-right: 50px
 	}
 	.mb-xxs-0 {
-		margin-bottom: 0
+		margin-bottom: 0!important
 	}
 	.mb-xxs-5 {
 		margin-bottom: 5px
@@ -4455,7 +4455,7 @@ body textarea:required:valid {
 		margin-bottom: 50px
 	}
 	.ml-xxs-0 {
-		margin-left: 0
+		margin-left: 0!important
 	}
 	.ml-xxs-5 {
 		margin-left: 5px
@@ -4491,7 +4491,7 @@ body textarea:required:valid {
 		padding: 0!important
 	}
 	.pt-xxs-0 {
-		padding-top: 0
+		padding-top: 0!important
 	}
 	.pt-xxs-5 {
 		padding-top: 5px
@@ -4524,7 +4524,7 @@ body textarea:required:valid {
 		padding-top: 50px
 	}
 	.pr-xxs-0 {
-		padding-right: 0
+		padding-right: 0!important
 	}
 	.pr-xxs-5 {
 		padding-right: 5px
@@ -4557,7 +4557,7 @@ body textarea:required:valid {
 		padding-right: 50px
 	}
 	.pb-xxs-0 {
-		padding-bottom: 0
+		padding-bottom: 0!important
 	}
 	.pb-xxs-5 {
 		padding-bottom: 5px
@@ -4590,7 +4590,7 @@ body textarea:required:valid {
 		padding-bottom: 50px
 	}
 	.pl-xxs-0 {
-		padding-left: 0
+		padding-left: 0!important
 	}
 	.pl-xxs-5 {
 		padding-left: 5px
@@ -4629,8 +4629,8 @@ body textarea:required:valid {
 		font-size: 18px
 	}
 	.edges-xxs-0, .e-xxs-0 {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 0!important;
+		padding-right: 0!important
 	}
 	.edges-xxs-5, .e-xxs-5 {
 		padding: 0 20px
