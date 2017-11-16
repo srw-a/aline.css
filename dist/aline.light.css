@@ -3,7 +3,7 @@
   * Author: Vladimir "srw" Ozhiganov;
   * Docs: ozhiganov.com/aline/docs
   * Contacts: m@ozhiganov.com
-  * Version: 1.0.2 (beta);
+  * Version: 1.0.3 (beta);
 */
 html {
 	position: relative;
@@ -146,7 +146,7 @@ h6, .h6 {
 .e-20 {
 	padding: 0 20px
 }
-.e-20 {
+.e-25 {
 	padding: 0 25px
 }
 .e-30 {
@@ -170,6 +170,10 @@ h6, .h6 {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex
+}
+.dif {
+	display: -webkit-inline-flex;
+	display: inline-flex
 }
 .fd-r {
 	-webkit-flex-direction: row;
@@ -1760,7 +1764,7 @@ body textarea:required:valid {
 	.e-xl-20 {
 		padding: 0 20px
 	}
-	.e-xl-20 {
+	.e-xl-25 {
 		padding: 0 25px
 	}
 	.e-xl-30 {
@@ -2339,7 +2343,7 @@ body textarea:required:valid {
 	.e-l-20 {
 		padding: 0 20px;
 	}
-	.e-l-20 {
+	.e-l-25 {
 		padding: 0 25px
 	}
 	.e-l-30 {
@@ -2913,7 +2917,7 @@ body textarea:required:valid {
 	.e-m-20 {
 		padding: 0 20px
 	}
-	.e-m-20 {
+	.e-m-25 {
 		padding: 0 25px
 	}
 	.e-m-30 {
@@ -3487,7 +3491,7 @@ body textarea:required:valid {
 	.e-s-20 {
 		padding: 0 20px
 	}
-	.e-s-20 {
+	.e-s-25 {
 		padding: 0 25px
 	}
 	.e-s-30 {
@@ -4061,7 +4065,7 @@ body textarea:required:valid {
 	.e-xs-20 {
 		padding: 0 20px
 	}
-	.e-xs-20 {
+	.e-xs-25 {
 		padding: 0 25px
 	}
 	.e-xs-30 {
@@ -4628,7 +4632,7 @@ body textarea:required:valid {
 	.e-xxs-20 {
 		padding: 0 20px
 	}
-	.e-xxs-20 {
+	.e-xxs-25 {
 		padding: 0 25px
 	}
 	.e-xxs-30 {

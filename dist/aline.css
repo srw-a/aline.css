@@ -3,7 +3,7 @@
   * Author: Vladimir "srw" Ozhiganov;
   * Docs: ozhiganov.com/aline/docs
   * Contacts: m@ozhiganov.com
-  * Version: 1.0.2 (beta);
+  * Version: 1.0.3 (beta);
 */
 html {
 	position: relative;
@@ -162,7 +162,7 @@ h6, .h6 {
 .edges-20, .e-20 {
 	padding: 0 20px
 }
-.edges-25, .e-20 {
+.edges-25, .e-25 {
 	padding: 0 25px
 }
 .edges-30, .e-30 {
@@ -186,6 +186,10 @@ h6, .h6 {
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex
+}
+.dif {
+	display: -webkit-inline-flex;
+	display: inline-flex;
 }
 .fd-row, .fd-r {
 	-webkit-flex-direction: row;
@@ -1776,7 +1780,7 @@ body textarea:required:valid {
 	.edges-xl-20, .e-xl-20 {
 		padding: 0 20px
 	}
-	.edges-xl-25, .e-xl-20 {
+	.edges-xl-25, .e-xl-25 {
 		padding: 0 25px
 	}
 	.edges-xl-30, .e-xl-30 {
@@ -2355,7 +2359,7 @@ body textarea:required:valid {
 	.edges-l-20, .e-l-20 {
 		padding: 0 20px;
 	}
-	.edges-l-25, .e-l-20 {
+	.edges-l-25, .e-l-25 {
 		padding: 0 25px
 	}
 	.edges-l-30, .e-l-30 {
@@ -2929,7 +2933,7 @@ body textarea:required:valid {
 	.edges-m-20, .e-m-20 {
 		padding: 0 20px
 	}
-	.edges-m-25, .e-m-20 {
+	.edges-m-25, .e-m-25 {
 		padding: 0 25px
 	}
 	.edges-m-30, .e-m-30 {
@@ -3503,7 +3507,7 @@ body textarea:required:valid {
 	.edges-s-20, .e-s-20 {
 		padding: 0 20px
 	}
-	.edges-s-25, .e-s-20 {
+	.edges-s-25, .e-s-25 {
 		padding: 0 25px
 	}
 	.edges-s-30, .e-s-30 {
@@ -4077,7 +4081,7 @@ body textarea:required:valid {
 	.edges-xs-20, .e-xs-20 {
 		padding: 0 20px
 	}
-	.edges-xs-25, .e-xs-20 {
+	.edges-xs-25, .e-xs-25 {
 		padding: 0 25px
 	}
 	.edges-xs-30, .e-xs-30 {
@@ -4644,7 +4648,7 @@ body textarea:required:valid {
 	.edges-xxs-20, .e-xxs-20 {
 		padding: 0 20px
 	}
-	.edges-xxs-25, .e-xxs-20 {
+	.edges-xxs-25, .e-xxs-25 {
 		padding: 0 25px
 	}
 	.edges-xxs-30, .e-xxs-30 {
