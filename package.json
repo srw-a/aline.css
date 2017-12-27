@@ -1,6 +1,6 @@
 {
   "name": "aline.css",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CSS-Grid Framework",
   "main": "aline.min.css",
   "scripts": {
