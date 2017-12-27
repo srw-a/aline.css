@@ -3,7 +3,7 @@
   * Author: Vladimir "srw" Ozhiganov;
   * Docs: ozhiganov.com/aline/docs
   * Contacts: m@ozhiganov.com
-  * Version: 1.0.3 (beta);
+  * Version: 1.0.4 (beta);
 */
 html {
 	position: relative;
@@ -52,6 +52,9 @@ input:focus, textarea:focus {
 input, textarea, button {
 	-webkit-appearance: none
 }
+input[type="radio" i] {-webkit-appearance: radio;}
+input[type="checkbox" i] {-webkit-appearance: checkbox;}
+input[type="button" i] {-webkit-appearance: button;}
 table {
 	border-spacing: 0;
 	border-collapse: collapse
@@ -98,7 +101,7 @@ h6, .h6 {
 .cols-wrap span, .c-wrap span, .c-w span {
 	font-size: 14px
 }
-.cols-row, .c-row, .c-r, .r {
+.cols-row, .c-row, .c-r, .r, .rf {
 	display: -webkit-flex;
 	display: flex;
 	align-items: flex-start;
@@ -111,7 +114,7 @@ h6, .h6 {
 	-o-transition: all .1s ease;
 	transition: all .1s ease
 }
-.stretch-edges, .s-edges, .s-e, .r {
+.stretch-edges, .s-edges, .s-e, .r, .rf {
 	margin: 0 -15px
 }
 .cols-wrap > div, .c-wrap > div, .c-w > div {
@@ -136,6 +139,22 @@ h6, .h6 {
 [class*="col-"] {
 	display: inline-block;
 	padding: 0 15px
+}
+.colp-0 [class*="col-"], .cp-0 [class*="col-"] {
+	padding: 0;
+}
+.colp-5 [class*="col-"], .cp-5 [class*="col-"] {
+	padding: 0 5px;
+}
+.colp-10 [class*="col-"], .cp-10 [class*="col-"] {
+	padding: 0 10px;
+}
+.colp-20 [class*="col-"], .cp-20 [class*="col-"] {
+	padding: 0 20px;
+}
+.rf [class*="col-"] {
+	display: -webkit-inline-flex;
+	display: inline-flex;
 }
 .p-clear, .p-c {
 	font-size: 0!important
@@ -231,17 +250,21 @@ h6, .h6 {
 	-webkit-justify-content: center;
 	justify-content: center
 }
-.h-between, .h-b, .jc-sbetween, .jc-sb {
+.h-sbetween, .h-sb, .jc-sbetween, .jc-sb {
 	-webkit-justify-content: space-between;
 	justify-content: space-between
 }
-.h-around, .h-a, .jc-saround, .jc-sa {
+.h-saround, .h-sa, .jc-saround, .jc-sa {
 	-webkit-justify-content: space-around;
 	justify-content: space-around
 }
 .h-right, .h-r, .jc-end, .jc-e {
 	-webkit-justify-content: flex-end;
 	justify-content: flex-end
+}
+.h-sevenly, .h-se, .jc-sevenly, .jc-se {
+	-webkit-justify-content: space-evenly;
+	justify-content: space-evenly
 }
 .v-top, .v-t, .ai-start, .ai-s {
 	-webkit-align-items: flex-start;
@@ -738,6 +761,9 @@ h6, .h6 {
 .w-100 {
 	width: 100%!important
 }
+.h-100 {
+	height: 100%!important
+}
 .clearfix {
 	clear: both;
 	float: none
@@ -919,133 +945,133 @@ h6, .h6 {
 	margin-top: 0!important
 }
 .mt-5 {
-	margin-top: 5px
+	margin-top: 5px!important
 }
 .mt-10 {
-	margin-top: 10px
+	margin-top: 10px!important
 }
 .mt-15 {
-	margin-top: 15px
+	margin-top: 15px!important
 }
 .mt-20 {
-	margin-top: 20px
+	margin-top: 20px!important
 }
 .mt-25 {
-	margin-top: 25px
+	margin-top: 25px!important
 }
 .mt-30 {
-	margin-top: 30px
+	margin-top: 30px!important
 }
 .mt-35 {
-	margin-top: 35px
+	margin-top: 35px!important
 }
 .mt-40 {
-	margin-top: 40px
+	margin-top: 40px!important
 }
 .mt-45 {
-	margin-top: 45px
+	margin-top: 45px!important
 }
 .mt-50 {
-	margin-top: 50px
+	margin-top: 50px!important
 }
 .mr-0 {
-	margin-right: 0
+	margin-right: 0!important
 }
 .mr-5 {
-	margin-right: 5px
+	margin-right: 5px!important
 }
 .mr-10 {
-	margin-right: 10px
+	margin-right: 10px!important
 }
 .mr-15 {
-	margin-right: 15px
+	margin-right: 15px!important
 }
 .mr-20 {
-	margin-right: 20px
+	margin-right: 20px!important
 }
 .mr-25 {
-	margin-right: 25px
+	margin-right: 25px!important
 }
 .mr-30 {
-	margin-right: 30px
+	margin-right: 30px!important
 }
 .mr-35 {
-	margin-right: 35px
+	margin-right: 35px!important
 }
 .mr-40 {
-	margin-right: 40px
+	margin-right: 40px!important
 }
 .mr-45 {
-	margin-right: 45px
+	margin-right: 45px!important
 }
 .mr-50 {
-	margin-right: 50px
+	margin-right: 50px!important
 }
 .mb-0 {
 	margin-bottom: 0!important
 }
 .mb-5 {
-	margin-bottom: 5px
+	margin-bottom: 5px!important
 }
 .mb-10 {
-	margin-bottom: 10px
+	margin-bottom: 10px!important
 }
 .mb-15 {
-	margin-bottom: 15px
+	margin-bottom: 15px!important
 }
 .mb-20 {
-	margin-bottom: 20px
+	margin-bottom: 20px!important
 }
 .mb-25 {
-	margin-bottom: 25px
+	margin-bottom: 25px!important
 }
 .mb-30 {
-	margin-bottom: 30px
+	margin-bottom: 30px!important
 }
 .mb-35 {
-	margin-bottom: 35px
+	margin-bottom: 35px!important
 }
 .mb-40 {
-	margin-bottom: 40px
+	margin-bottom: 40px!important
 }
 .mb-45 {
-	margin-bottom: 45px
+	margin-bottom: 45px!important
 }
 .mb-50 {
-	margin-bottom: 50px
+	margin-bottom: 50px!important
 }
 .ml-0 {
 	margin-left: 0!important
 }
 .ml-5 {
-	margin-left: 5px
+	margin-left: 5px!important
 }
 .ml-10 {
-	margin-left: 10px
+	margin-left: 10px!important
 }
 .ml-15 {
-	margin-left: 15px
+	margin-left: 15px!important
 }
 .ml-20 {
-	margin-left: 20px
+	margin-left: 20px!important
 }
 .ml-25 {
-	margin-left: 25px
+	margin-left: 25px!important
 }
 .ml-30 {
-	margin-left: 30px
+	margin-left: 30px!important
 }
 .ml-35 {
-	margin-left: 35px
+	margin-left: 35px!important
 }
 .ml-40 {
-	margin-left: 40px
+	margin-left: 40px!important
 }
 .ml-45 {
-	margin-left: 45px
+	margin-left: 45px!important
 }
 .ml-50 {
-	margin-left: 50px
+	margin-left: 50px!important
 }
 .p-0 {
 	padding: 0!important
@@ -1054,133 +1080,133 @@ h6, .h6 {
 	padding-top: 0!important
 }
 .pt-5 {
-	padding-top: 5px
+	padding-top: 5px!important
 }
 .pt-10 {
-	padding-top: 10px
+	padding-top: 10px!important
 }
 .pt-15 {
-	padding-top: 15px
+	padding-top: 15px!important
 }
 .pt-20 {
-	padding-top: 20px
+	padding-top: 20px!important
 }
 .pt-25 {
-	padding-top: 25px
+	padding-top: 25px!important
 }
 .pt-30 {
-	padding-top: 30px
+	padding-top: 30px!important
 }
 .pt-35 {
-	padding-top: 35px
+	padding-top: 35px!important
 }
 .pt-40 {
-	padding-top: 40px
+	padding-top: 40px!important
 }
 .pt-45 {
-	padding-top: 45px
+	padding-top: 45px!important
 }
 .pt-50 {
-	padding-top: 50px
+	padding-top: 50px!important
 }
 .pr-0 {
 	padding-right: 0!important
 }
 .pr-5 {
-	padding-right: 5px
+	padding-right: 5px!important
 }
 .pr-10 {
-	padding-right: 10px
+	padding-right: 10px!important
 }
 .pr-15 {
-	padding-right: 15px
+	padding-right: 15px!important
 }
 .pr-20 {
-	padding-right: 20px
+	padding-right: 20px!important
 }
 .pr-25 {
-	padding-right: 25px
+	padding-right: 25px!important
 }
 .pr-30 {
-	padding-right: 30px
+	padding-right: 30px!important
 }
 .pr-35 {
-	padding-right: 35px
+	padding-right: 35px!important
 }
 .pr-40 {
-	padding-right: 40px
+	padding-right: 40px!important
 }
 .pr-45 {
-	padding-right: 45px
+	padding-right: 45px!important
 }
 .pr-50 {
-	padding-right: 50px
+	padding-right: 50px!important
 }
 .pb-0 {
 	padding-bottom: 0!important
 }
 .pb-5 {
-	padding-bottom: 5px
+	padding-bottom: 5px!important
 }
 .pb-10 {
-	padding-bottom: 10px
+	padding-bottom: 10px!important
 }
 .pb-15 {
-	padding-bottom: 15px
+	padding-bottom: 15px!important
 }
 .pb-20 {
-	padding-bottom: 20px
+	padding-bottom: 20px!important
 }
 .pb-25 {
-	padding-bottom: 25px
+	padding-bottom: 25px!important
 }
 .pb-30 {
-	padding-bottom: 30px
+	padding-bottom: 30px!important
 }
 .pb-35 {
-	padding-bottom: 35px
+	padding-bottom: 35px!important
 }
 .pb-40 {
-	padding-bottom: 40px
+	padding-bottom: 40px!important
 }
 .pb-45 {
-	padding-bottom: 45px
+	padding-bottom: 45px!important
 }
 .pb-50 {
-	padding-bottom: 50px
+	padding-bottom: 50px!important
 }
 .pl-0 {
 	padding-left: 0!important
 }
 .pl-5 {
-	padding-left: 5px
+	padding-left: 5px!important
 }
 .pl-10 {
-	padding-left: 10px
+	padding-left: 10px!important
 }
 .pl-15 {
-	padding-left: 15px
+	padding-left: 15px!important
 }
 .pl-20 {
-	padding-left: 20px
+	padding-left: 20px!important
 }
 .pl-25 {
-	padding-left: 25px
+	padding-left: 25px!important
 }
 .pl-30 {
-	padding-left: 30px
+	padding-left: 30px!important
 }
 .pl-35 {
-	padding-left: 35px
+	padding-left: 35px!important
 }
 .pl-40 {
-	padding-left: 40px
+	padding-left: 40px!important
 }
 .pl-45 {
-	padding-left: 45px
+	padding-left: 45px!important
 }
 .pl-50 {
-	padding-left: 50px
+	padding-left: 50px!important
 }
 ::-webkit-input-placeholder {
 	color: #666;
@@ -1403,6 +1429,10 @@ body textarea:required:valid {
 		-webkit-justify-content: space-around;
 		justify-content: space-around
 	}
+	.h-xl-sevenly, .h-xl-se, .jc-xl-sevenly, .jc-xl-se {
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly
+	}
 	.vc-xl-top, .vc-xl-t, .ac-xl-start, .ac-xl-s {
 		-webkit-align-content: flex-start;
 		align-content: flex-start
@@ -1483,133 +1513,133 @@ body textarea:required:valid {
 		margin-top: 0!important
 	}
 	.mt-xl-5 {
-		margin-top: 5px
+		margin-top: 5px!important
 	}
 	.mt-xl-10 {
-		margin-top: 10px
+		margin-top: 10px!important
 	}
 	.mt-xl-15 {
-		margin-top: 15px
+		margin-top: 15px!important
 	}
 	.mt-xl-20 {
-		margin-top: 20px
+		margin-top: 20px!important
 	}
 	.mt-xl-25 {
-		margin-top: 25px
+		margin-top: 25px!important
 	}
 	.mt-xl-30 {
-		margin-top: 30px
+		margin-top: 30px!important
 	}
 	.mt-xl-35 {
-		margin-top: 35px
+		margin-top: 35px!important
 	}
 	.mt-xl-40 {
-		margin-top: 40px
+		margin-top: 40px!important
 	}
 	.mt-xl-45 {
-		margin-top: 45px
+		margin-top: 45px!important
 	}
 	.mt-xl-50 {
-		margin-top: 50px
+		margin-top: 50px!important
 	}
 	.mr-xl-0 {
 		margin-right: 0!important
 	}
 	.mr-xl-5 {
-		margin-right: 5px
+		margin-right: 5px!important
 	}
 	.mr-xl-10 {
-		margin-right: 10px
+		margin-right: 10px!important
 	}
 	.mr-xl-15 {
-		margin-right: 15px
+		margin-right: 15px!important
 	}
 	.mr-xl-20 {
-		margin-right: 20px
+		margin-right: 20px!important
 	}
 	.mr-xl-25 {
-		margin-right: 25px
+		margin-right: 25px!important
 	}
 	.mr-xl-30 {
-		margin-right: 30px
+		margin-right: 30px!important
 	}
 	.mr-xl-35 {
-		margin-right: 35px
+		margin-right: 35px!important
 	}
 	.mr-xl-40 {
-		margin-right: 40px
+		margin-right: 40px!important
 	}
 	.mr-xl-45 {
-		margin-right: 45px
+		margin-right: 45px!important
 	}
 	.mr-xl-50 {
-		margin-right: 50px
+		margin-right: 50px!important
 	}
 	.mb-xl-0 {
 		margin-bottom: 0!important
 	}
 	.mb-xl-5 {
-		margin-bottom: 5px
+		margin-bottom: 5px!important
 	}
 	.mb-xm-10 {
-		margin-bottom: 10px
+		margin-bottom: 10px!important
 	}
 	.mb-xm-15 {
-		margin-bottom: 15px
+		margin-bottom: 15px!important
 	}
 	.mb-xm-20 {
-		margin-bottom: 20px
+		margin-bottom: 20px!important
 	}
 	.mb-xm-25 {
-		margin-bottom: 25px
+		margin-bottom: 25px!important
 	}
 	.mb-xm-30 {
-		margin-bottom: 30px
+		margin-bottom: 30px!important
 	}
 	.mb-xm-35 {
-		margin-bottom: 35px
+		margin-bottom: 35px!important
 	}
 	.mb-xm-40 {
-		margin-bottom: 40px
+		margin-bottom: 40px!important
 	}
 	.mb-xl-45 {
-		margin-bottom: 45px
+		margin-bottom: 45px!important
 	}
 	.mb-xl-50 {
-		margin-bottom: 50px
+		margin-bottom: 50px!important
 	}
 	.ml-xl-0 {
 		margin-left: 0!important
 	}
 	.ml-xl-5 {
-		margin-left: 5px
+		margin-left: 5px!important
 	}
 	.ml-xl-10 {
-		margin-left: 10px
+		margin-left: 10px!important
 	}
 	.ml-xl-15 {
-		margin-left: 15px
+		margin-left: 15px!important
 	}
 	.ml-xl-20 {
-		margin-left: 20px
+		margin-left: 20px!important
 	}
 	.ml-xl-25 {
-		margin-left: 25px
+		margin-left: 25px!important
 	}
 	.ml-xl-30 {
-		margin-left: 30px
+		margin-left: 30px!important
 	}
 	.ml-xl-35 {
-		margin-left: 35px
+		margin-left: 35px!important
 	}
 	.ml-xl-40 {
-		margin-left: 40px
+		margin-left: 40px!important
 	}
 	.ml-xl-45 {
-		margin-left: 45px
+		margin-left: 45px!important
 	}
 	.ml-xl-50 {
-		margin-left: 50px
+		margin-left: 50px!important
 	}
 	.p-xl-0 {
 		padding: 0!important
@@ -1618,133 +1648,133 @@ body textarea:required:valid {
 		padding-top: 0!important
 	}
 	.pt-xl-5 {
-		padding-top: 5px
+		padding-top: 5px!important
 	}
 	.pt-xl-10 {
-		padding-top: 10px
+		padding-top: 10px!important
 	}
 	.pt-xl-15 {
-		padding-top: 15px
+		padding-top: 15px!important
 	}
 	.pt-xl-20 {
-		padding-top: 20px
+		padding-top: 20px!important
 	}
 	.pt-xl-25 {
-		padding-top: 25px
+		padding-top: 25px!important
 	}
 	.pt-xl-30 {
-		padding-top: 30px
+		padding-top: 30px!important
 	}
 	.pt-xl-35 {
-		padding-top: 35px
+		padding-top: 35px!important
 	}
 	.pt-xl-40 {
-		padding-top: 40px
+		padding-top: 40px!important
 	}
 	.pt-xl-45 {
-		padding-top: 45px
+		padding-top: 45px!important
 	}
 	.pt-xl-50 {
-		padding-top: 50px
+		padding-top: 50px!important
 	}
 	.pr-xl-0 {
 		padding-right: 0!important
 	}
 	.pr-xl-5 {
-		padding-right: 5px
+		padding-right: 5px!important
 	}
 	.pr-xl-10 {
-		padding-right: 10px
+		padding-right: 10px!important
 	}
 	.pr-xl-15 {
-		padding-right: 15px
+		padding-right: 15px!important
 	}
 	.pr-xl-20 {
-		padding-right: 20px
+		padding-right: 20px!important
 	}
 	.pr-xl-25 {
-		padding-right: 25px
+		padding-right: 25px!important
 	}
 	.pr-xl-30 {
-		padding-right: 30px
+		padding-right: 30px!important
 	}
 	.pr-xl-35 {
-		padding-right: 35px
+		padding-right: 35px!important
 	}
 	.pr-xl-40 {
-		padding-right: 40px
+		padding-right: 40px!important
 	}
 	.pr-xl-45 {
-		padding-right: 45px
+		padding-right: 45px!important
 	}
 	.pr-xl-50 {
-		padding-right: 50px
+		padding-right: 50px!important
 	}
 	.pb-xl-0 {
 		padding-bottom: 0!important
 	}
 	.pb-xl-5 {
-		padding-bottom: 5px
+		padding-bottom: 5px!important
 	}
 	.pb-xl-10 {
-		padding-bottom: 10px
+		padding-bottom: 10px!important
 	}
 	.pb-xl-15 {
-		padding-bottom: 15px
+		padding-bottom: 15px!important
 	}
 	.pb-xl-20 {
-		padding-bottom: 20px
+		padding-bottom: 20px!important
 	}
 	.pb-xl-25 {
-		padding-bottom: 25px
+		padding-bottom: 25px!important
 	}
 	.pb-xl-30 {
-		padding-bottom: 30px
+		padding-bottom: 30px!important
 	}
 	.pb-xl-35 {
-		padding-bottom: 35px
+		padding-bottom: 35px!important
 	}
 	.pb-xl-40 {
-		padding-bottom: 40px
+		padding-bottom: 40px!important
 	}
 	.pb-xl-45 {
-		padding-bottom: 45px
+		padding-bottom: 45px!important
 	}
 	.pb-xl-50 {
-		padding-bottom: 50px
+		padding-bottom: 50px!important
 	}
 	.pl-xl-0 {
 		padding-left: 0!important
 	}
 	.pl-xl-5 {
-		padding-left: 5px
+		padding-left: 5px!important
 	}
 	.pl-xl-10 {
-		padding-left: 10px
+		padding-left: 10px!important
 	}
 	.pl-xl-15 {
-		padding-left: 15px
+		padding-left: 15px!important
 	}
 	.pl-xl-20 {
-		padding-left: 20px
+		padding-left: 20px!important
 	}
 	.pl-xl-25 {
-		padding-left: 25px
+		padding-left: 25px!important
 	}
 	.pl-xl-30 {
-		padding-left: 30px
+		padding-left: 30px!important
 	}
 	.pl-xl-35 {
-		padding-left: 35px
+		padding-left: 35px!important
 	}
 	.pl-xl-40 {
-		padding-left: 40px
+		padding-left: 40px!important
 	}
 	.pl-xl-45 {
-		padding-left: 45px
+		padding-left: 45px!important
 	}
 	.pl-xl-50 {
-		padding-left: 50px
+		padding-left: 50px!important
 	}
 	h1, .h1 {
 		font-size: 34px
@@ -1797,6 +1827,18 @@ body textarea:required:valid {
 	}
 	.edges-xl-50, .e-xl-50 {
 		padding: 0 50px
+	}
+	.colp-xl-0 [class*="col-"], .cp-xl-0 [class*="col-"] {
+		padding: 0
+	}
+	.colp-xl-5 [class*="col-"], .cp-xl-5 [class*="col-"] {
+		padding: 0 5px
+	}
+	.colp-xl-10 [class*="col-"], .cp-xl-10 [class*="col-"] {
+		padding: 0 10px
+	}
+	.colp-xl-20 [class*="col-"], .cp-xl-20 [class*="col-"] {
+		padding: 0 20px
 	}
 }
 @media only screen and (min-width: 1200px) {
@@ -1982,6 +2024,10 @@ body textarea:required:valid {
 		-webkit-justify-content: space-around;
 		justify-content: space-around
 	}
+	.h-l-sevenly, .h-l-se, .jc-l-sevenly, .jc-l-se {
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly
+	}
 	.vc-l-top, .vc-l-t, .ac-l-start, .ac-l-s {
 		-webkit-align-content: flex-start;
 		align-content: flex-start
@@ -2062,133 +2108,133 @@ body textarea:required:valid {
 		margin-top: 0!important
 	}
 	.mt-l-5 {
-		margin-top: 5px
+		margin-top: 5px!important
 	}
 	.mt-l-10 {
-		margin-top: 10px
+		margin-top: 10px!important
 	}
 	.mt-l-15 {
-		margin-top: 15px
+		margin-top: 15px!important
 	}
 	.mt-l-20 {
-		margin-top: 20px
+		margin-top: 20px!important
 	}
 	.mt-l-25 {
-		margin-top: 25px
+		margin-top: 25px!important
 	}
 	.mt-l-30 {
-		margin-top: 30px
+		margin-top: 30px!important
 	}
 	.mt-l-35 {
-		margin-top: 35px
+		margin-top: 35px!important
 	}
 	.mt-l-40 {
-		margin-top: 40px
+		margin-top: 40px!important
 	}
 	.mt-l-45 {
-		margin-top: 45px
+		margin-top: 45px!important
 	}
 	.mt-l-50 {
-		margin-top: 50px
+		margin-top: 50px!important
 	}
 	.mr-l-0 {
 		margin-right: 0!important
 	}
 	.mr-l-5 {
-		margin-right: 5px
+		margin-right: 5px!important
 	}
 	.mr-l-10 {
-		margin-right: 10px
+		margin-right: 10px!important
 	}
 	.mr-l-15 {
-		margin-right: 15px
+		margin-right: 15px!important
 	}
 	.mr-l-20 {
-		margin-right: 20px
+		margin-right: 20px!important
 	}
 	.mr-l-25 {
-		margin-right: 25px
+		margin-right: 25px!important
 	}
 	.mr-l-30 {
-		margin-right: 30px
+		margin-right: 30px!important
 	}
 	.mr-l-35 {
-		margin-right: 35px
+		margin-right: 35px!important
 	}
 	.mr-l-40 {
-		margin-right: 40px
+		margin-right: 40px!important
 	}
 	.mr-l-45 {
-		margin-right: 45px
+		margin-right: 45px!important
 	}
 	.mr-l-50 {
-		margin-right: 50px
+		margin-right: 50px!important
 	}
 	.mb-l-0 {
 		margin-bottom: 0!important
 	}
 	.mb-l-5 {
-		margin-bottom: 5px
+		margin-bottom: 5px!important
 	}
 	.mb-l-10 {
-		margin-bottom: 10px
+		margin-bottom: 10px!important
 	}
 	.mb-l-15 {
-		margin-bottom: 15px
+		margin-bottom: 15px!important
 	}
 	.mb-l-20 {
-		margin-bottom: 20px
+		margin-bottom: 20px!important
 	}
 	.mb-l-25 {
-		margin-bottom: 25px
+		margin-bottom: 25px!important
 	}
 	.mb-l-30 {
-		margin-bottom: 30px
+		margin-bottom: 30px!important
 	}
 	.mb-l-35 {
-		margin-bottom: 35px
+		margin-bottom: 35px!important
 	}
 	.mb-l-40 {
-		margin-bottom: 40px
+		margin-bottom: 40px!important
 	}
 	.mb-l-45 {
-		margin-bottom: 45px
+		margin-bottom: 45px!important
 	}
 	.mb-l-50 {
-		margin-bottom: 50px
+		margin-bottom: 50px!important
 	}
 	.ml-l-0 {
 		margin-left: 0!important
 	}
 	.ml-l-5 {
-		margin-left: 5px
+		margin-left: 5px!important
 	}
 	.ml-l-10 {
-		margin-left: 10px
+		margin-left: 10px!important
 	}
 	.ml-l-15 {
-		margin-left: 15px
+		margin-left: 15px!important
 	}
 	.ml-l-20 {
-		margin-left: 20px
+		margin-left: 20px!important
 	}
 	.ml-l-25 {
-		margin-left: 25px
+		margin-left: 25px!important
 	}
 	.ml-l-30 {
-		margin-left: 30px
+		margin-left: 30px!important
 	}
 	.ml-l-35 {
-		margin-left: 35px
+		margin-left: 35px!important
 	}
 	.ml-l-40 {
-		margin-left: 40px
+		margin-left: 40px!important
 	}
 	.ml-l-45 {
-		margin-left: 45px
+		margin-left: 45px!important
 	}
 	.ml-l-50 {
-		margin-left: 50px
+		margin-left: 50px!important
 	}
 	.p-l-0 {
 		padding: 0!important
@@ -2197,133 +2243,133 @@ body textarea:required:valid {
 		padding-top: 0!important
 	}
 	.pt-l-5 {
-		padding-top: 5px
+		padding-top: 5px!important
 	}
 	.pt-l-10 {
-		padding-top: 10px
+		padding-top: 10px!important
 	}
 	.pt-l-15 {
-		padding-top: 15px
+		padding-top: 15px!important
 	}
 	.pt-l-20 {
-		padding-top: 20px
+		padding-top: 20px!important
 	}
 	.pt-l-25 {
-		padding-top: 25px
+		padding-top: 25px!important
 	}
 	.pt-l-30 {
-		padding-top: 30px
+		padding-top: 30px!important
 	}
 	.pt-l-35 {
-		padding-top: 35px
+		padding-top: 35px!important
 	}
 	.pt-l-40 {
-		padding-top: 40px
+		padding-top: 40px!important
 	}
 	.pt-l-45 {
-		padding-top: 45px
+		padding-top: 45px!important
 	}
 	.pt-l-50 {
-		padding-top: 50px
+		padding-top: 50px!important
 	}
 	.pr-l-0 {
 		padding-right: 0!important
 	}
 	.pr-l-5 {
-		padding-right: 5px
+		padding-right: 5px!important
 	}
 	.pr-l-10 {
-		padding-right: 10px
+		padding-right: 10px!important
 	}
 	.pr-l-15 {
-		padding-right: 15px
+		padding-right: 15px!important
 	}
 	.pr-l-20 {
-		padding-right: 20px
+		padding-right: 20px!important
 	}
 	.pr-l-25 {
-		padding-right: 25px
+		padding-right: 25px!important
 	}
 	.pr-l-30 {
-		padding-right: 30px
+		padding-right: 30px!important
 	}
 	.pr-l-35 {
-		padding-right: 35px
+		padding-right: 35px!important
 	}
 	.pr-l-40 {
-		padding-right: 40px
+		padding-right: 40px!important
 	}
 	.pr-l-45 {
-		padding-right: 45px
+		padding-right: 45px!important
 	}
 	.pr-l-50 {
-		padding-right: 50px
+		padding-right: 50px!important
 	}
 	.pb-l-0 {
 		padding-bottom: 0!important
 	}
 	.pb-l-5 {
-		padding-bottom: 5px
+		padding-bottom: 5px!important
 	}
 	.pb-l-10 {
-		padding-bottom: 10px
+		padding-bottom: 10px!important
 	}
 	.pb-l-15 {
-		padding-bottom: 15px
+		padding-bottom: 15px!important
 	}
 	.pb-l-20 {
-		padding-bottom: 20px
+		padding-bottom: 20px!important
 	}
 	.pb-l-25 {
-		padding-bottom: 25px
+		padding-bottom: 25px!important
 	}
 	.pb-l-30 {
-		padding-bottom: 30px
+		padding-bottom: 30px!important
 	}
 	.pb-l-35 {
-		padding-bottom: 35px
+		padding-bottom: 35px!important
 	}
 	.pb-l-40 {
-		padding-bottom: 40px
+		padding-bottom: 40px!important
 	}
 	.pb-l-45 {
-		padding-bottom: 45px
+		padding-bottom: 45px!important
 	}
 	.pb-l-50 {
-		padding-bottom: 50px
+		padding-bottom: 50px!important
 	}
 	.pl-l-0 {
 		padding-left: 0!important
 	}
 	.pl-l-5 {
-		padding-left: 5px
+		padding-left: 5px!important
 	}
 	.pl-l-10 {
-		padding-left: 10px
+		padding-left: 10px!important
 	}
 	.pl-l-15 {
-		padding-left: 15px
+		padding-left: 15px!important
 	}
 	.pl-l-20 {
-		padding-left: 20px
+		padding-left: 20px!important
 	}
 	.pl-l-25 {
-		padding-left: 25px
+		padding-left: 25px!important
 	}
 	.pl-l-30 {
-		padding-left: 30px
+		padding-left: 30px!important
 	}
 	.pl-l-35 {
-		padding-left: 35px
+		padding-left: 35px!important
 	}
 	.pl-l-40 {
-		padding-left: 40px
+		padding-left: 40px!important
 	}
 	.pl-l-45 {
-		padding-left: 45px
+		padding-left: 45px!important
 	}
 	.pl-l-50 {
-		padding-left: 50px
+		padding-left: 50px!important
 	}
 	h1, .h1 {
 		font-size: 34px
@@ -2376,6 +2422,18 @@ body textarea:required:valid {
 	}
 	.edges-l-50, .e-l-50 {
 		padding: 0 50px
+	}
+	.colp-l-0 [class*="col-"], .cp-l-0 [class*="col-"] {
+		padding: 0
+	}
+	.colp-l-5 [class*="col-"], .cp-l-5 [class*="col-"] {
+		padding: 0 5px
+	}
+	.colp-l-10 [class*="col-"], .cp-l-10 [class*="col-"] {
+		padding: 0 10px
+	}
+	.colp-l-20 [class*="col-"], .cp-l-20 [class*="col-"] {
+		padding: 0 20px
 	}
 }
 @media only screen and (max-width: 1199px) {
@@ -2556,6 +2614,10 @@ body textarea:required:valid {
 		-webkit-justify-content: space-around;
 		justify-content: space-around
 	}
+	.h-m-sevenly, .h-m-se, .jc-m-sevenly, .jc-m-se {
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly
+	}
 	.vc-m-top, .vc-m-t, .ac-m-start, .ac-m-s {
 		-webkit-align-content: flex-start;
 		align-content: flex-start
@@ -2636,133 +2698,133 @@ body textarea:required:valid {
 		margin-top: 0!important
 	}
 	.mt-m-5 {
-		margin-top: 5px
+		margin-top: 5px!important
 	}
 	.mt-m-10 {
-		margin-top: 10px
+		margin-top: 10px!important
 	}
 	.mt-m-15 {
-		margin-top: 15px
+		margin-top: 15px!important
 	}
 	.mt-m-20 {
-		margin-top: 20px
+		margin-top: 20px!important
 	}
 	.mt-m-25 {
-		margin-top: 25px
+		margin-top: 25px!important
 	}
 	.mt-m-30 {
-		margin-top: 30px
+		margin-top: 30px!important
 	}
 	.mt-m-35 {
-		margin-top: 35px
+		margin-top: 35px!important
 	}
 	.mt-m-40 {
-		margin-top: 40px
+		margin-top: 40px!important
 	}
 	.mt-m-45 {
-		margin-top: 45px
+		margin-top: 45px!important
 	}
 	.mt-m-50 {
-		margin-top: 50px
+		margin-top: 50px!important
 	}
 	.mr-m-0 {
 		margin-right: 0!important
 	}
 	.mr-m-5 {
-		margin-right: 5px
+		margin-right: 5px!important
 	}
 	.mr-m-10 {
-		margin-right: 10px
+		margin-right: 10px!important
 	}
 	.mr-m-15 {
-		margin-right: 15px
+		margin-right: 15px!important
 	}
 	.mr-m-20 {
-		margin-right: 20px
+		margin-right: 20px!important
 	}
 	.mr-m-25 {
-		margin-right: 25px
+		margin-right: 25px!important
 	}
 	.mr-m-30 {
-		margin-right: 30px
+		margin-right: 30px!important
 	}
 	.mr-m-35 {
-		margin-right: 35px
+		margin-right: 35px!important
 	}
 	.mr-m-40 {
-		margin-right: 40px
+		margin-right: 40px!important
 	}
 	.mr-m-45 {
-		margin-right: 45px
+		margin-right: 45px!important
 	}
 	.mr-m-50 {
-		margin-right: 50px
+		margin-right: 50px!important
 	}
 	.mb-m-0 {
 		margin-bottom: 0!important
 	}
 	.mb-m-5 {
-		margin-bottom: 5px
+		margin-bottom: 5px!important
 	}
 	.mb-m-10 {
-		margin-bottom: 10px
+		margin-bottom: 10px!important
 	}
 	.mb-m-15 {
-		margin-bottom: 15px
+		margin-bottom: 15px!important
 	}
 	.mb-m-20 {
-		margin-bottom: 20px
+		margin-bottom: 20px!important
 	}
 	.mb-m-25 {
-		margin-bottom: 25px
+		margin-bottom: 25px!important
 	}
 	.mb-m-30 {
-		margin-bottom: 30px
+		margin-bottom: 30px!important
 	}
 	.mb-m-35 {
-		margin-bottom: 35px
+		margin-bottom: 35px!important
 	}
 	.mb-m-40 {
-		margin-bottom: 40px
+		margin-bottom: 40px!important
 	}
 	.mb-m-45 {
-		margin-bottom: 45px
+		margin-bottom: 45px!important
 	}
 	.mb-m-50 {
-		margin-bottom: 50px
+		margin-bottom: 50px!important
 	}
 	.ml-m-0 {
 		margin-left: 0!important
 	}
 	.ml-m-5 {
-		margin-left: 5px
+		margin-left: 5px!important
 	}
 	.ml-m-10 {
-		margin-left: 10px
+		margin-left: 10px!important
 	}
 	.ml-m-15 {
-		margin-left: 15px
+		margin-left: 15px!important
 	}
 	.ml-m-20 {
-		margin-left: 20px
+		margin-left: 20px!important
 	}
 	.ml-m-25 {
-		margin-left: 25px
+		margin-left: 25px!important
 	}
 	.ml-m-30 {
-		margin-left: 30px
+		margin-left: 30px!important
 	}
 	.ml-m-35 {
-		margin-left: 35px
+		margin-left: 35px!important
 	}
 	.ml-m-40 {
-		margin-left: 40px
+		margin-left: 40px!important
 	}
 	.ml-m-45 {
-		margin-left: 45px
+		margin-left: 45px!important
 	}
 	.ml-m-50 {
-		margin-left: 50px
+		margin-left: 50px!important
 	}
 	.p-m-0 {
 		padding: 0!important
@@ -2771,133 +2833,133 @@ body textarea:required:valid {
 		padding-top: 0!important
 	}
 	.pt-m-5 {
-		padding-top: 5px
+		padding-top: 5px!important
 	}
 	.pt-m-10 {
-		padding-top: 10px
+		padding-top: 10px!important
 	}
 	.pt-m-15 {
-		padding-top: 15px
+		padding-top: 15px!important
 	}
 	.pt-m-20 {
-		padding-top: 20px
+		padding-top: 20px!important
 	}
 	.pt-m-25 {
-		padding-top: 25px
+		padding-top: 25px!important
 	}
 	.pt-m-30 {
-		padding-top: 30px
+		padding-top: 30px!important
 	}
 	.pt-m-35 {
-		padding-top: 35px
+		padding-top: 35px!important
 	}
 	.pt-m-40 {
-		padding-top: 40px
+		padding-top: 40px!important
 	}
 	.pt-m-45 {
-		padding-top: 45px
+		padding-top: 45px!important
 	}
 	.pt-m-50 {
-		padding-top: 50px
+		padding-top: 50px!important
 	}
 	.pr-m-0 {
 		padding-right: 0!important
 	}
 	.pr-m-5 {
-		padding-right: 5px
+		padding-right: 5px!important
 	}
 	.pr-m-10 {
-		padding-right: 10px
+		padding-right: 10px!important
 	}
 	.pr-m-15 {
-		padding-right: 15px
+		padding-right: 15px!important
 	}
 	.pr-m-20 {
-		padding-right: 20px
+		padding-right: 20px!important
 	}
 	.pr-m-25 {
-		padding-right: 25px
+		padding-right: 25px!important
 	}
 	.pr-m-30 {
-		padding-right: 30px
+		padding-right: 30px!important
 	}
 	.pr-m-35 {
-		padding-right: 35px
+		padding-right: 35px!important
 	}
 	.pr-m-40 {
-		padding-right: 40px
+		padding-right: 40px!important
 	}
 	.pr-m-45 {
-		padding-right: 45px
+		padding-right: 45px!important
 	}
 	.pr-m-50 {
-		padding-right: 50px
+		padding-right: 50px!important
 	}
 	.pb-m-0 {
 		padding-bottom: 0!important
 	}
 	.pb-m-5 {
-		padding-bottom: 5px
+		padding-bottom: 5px!important
 	}
 	.pb-m-10 {
-		padding-bottom: 10px
+		padding-bottom: 10px!important
 	}
 	.pb-m-15 {
-		padding-bottom: 15px
+		padding-bottom: 15px!important
 	}
 	.pb-m-20 {
-		padding-bottom: 20px
+		padding-bottom: 20px!important
 	}
 	.pb-m-25 {
-		padding-bottom: 25px
+		padding-bottom: 25px!important
 	}
 	.pb-m-30 {
-		padding-bottom: 30px
+		padding-bottom: 30px!important
 	}
 	.pb-m-35 {
-		padding-bottom: 35px
+		padding-bottom: 35px!important
 	}
 	.pb-m-40 {
-		padding-bottom: 40px
+		padding-bottom: 40px!important
 	}
 	.pb-m-45 {
-		padding-bottom: 45px
+		padding-bottom: 45px!important
 	}
 	.pb-m-50 {
-		padding-bottom: 50px
+		padding-bottom: 50px!important
 	}
 	.pl-m-0 {
 		padding-left: 0!important
 	}
 	.pl-m-5 {
-		padding-left: 5px
+		padding-left: 5px!important
 	}
 	.pl-m-10 {
-		padding-left: 10px
+		padding-left: 10px!important
 	}
 	.pl-m-15 {
-		padding-left: 15px
+		padding-left: 15px!important
 	}
 	.pl-m-20 {
-		padding-left: 20px
+		padding-left: 20px!important
 	}
 	.pl-m-25 {
-		padding-left: 25px
+		padding-left: 25px!important
 	}
 	.pl-m-30 {
-		padding-left: 30px
+		padding-left: 30px!important
 	}
 	.pl-m-35 {
-		padding-left: 35px
+		padding-left: 35px!important
 	}
 	.pl-m-40 {
-		padding-left: 40px
+		padding-left: 40px!important
 	}
 	.pl-m-45 {
-		padding-left: 45px
+		padding-left: 45px!important
 	}
 	.pl-m-50 {
-		padding-left: 50px
+		padding-left: 50px!important
 	}
 	h1, .h1 {
 		font-size: 34px
@@ -2950,6 +3012,18 @@ body textarea:required:valid {
 	}
 	.edges-m-50, .e-m-50 {
 		padding: 0 50px
+	}
+	.colp-m-0 [class*="col-"], .cp-m-0 [class*="col-"] {
+		padding: 0
+	}
+	.colp-m-5 [class*="col-"], .cp-m-5 [class*="col-"] {
+		padding: 0 5px
+	}
+	.colp-m-10 [class*="col-"], .cp-m-10 [class*="col-"] {
+		padding: 0 10px
+	}
+	.colp-m-20 [class*="col-"], .cp-m-20 [class*="col-"] {
+		padding: 0 20px
 	}
 }
 @media only screen and (max-width: 991px) {
@@ -3130,6 +3204,10 @@ body textarea:required:valid {
 		-webkit-justify-content: space-around;
 		justify-content: space-around
 	}
+	.h-s-sevenly, .h-s-se, .jc-s-sevenly, .jc-s-se {
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly
+	}
 	.vc-s-top, .vc-s-t, .ac-s-start, .ac-s-s {
 		-webkit-align-content: flex-start;
 		align-content: flex-start
@@ -3210,133 +3288,133 @@ body textarea:required:valid {
 		margin-top: 0!important
 	}
 	.mt-s-5 {
-		margin-top: 5px
+		margin-top: 5px!important
 	}
 	.mt-s-10 {
-		margin-top: 10px
+		margin-top: 10px!important
 	}
 	.mt-s-15 {
-		margin-top: 15px
+		margin-top: 15px!important
 	}
 	.mt-s-20 {
-		margin-top: 20px
+		margin-top: 20px!important
 	}
 	.mt-s-25 {
-		margin-top: 25px
+		margin-top: 25px!important
 	}
 	.mt-s-30 {
-		margin-top: 30px
+		margin-top: 30px!important
 	}
 	.mt-s-35 {
-		margin-top: 35px
+		margin-top: 35px!important
 	}
 	.mt-s-40 {
-		margin-top: 40px
+		margin-top: 40px!important
 	}
 	.mt-s-45 {
-		margin-top: 45px
+		margin-top: 45px!important
 	}
 	.mt-s-50 {
-		margin-top: 50px
+		margin-top: 50px!important
 	}
 	.mr-s-0 {
 		margin-right: 0!important
 	}
 	.mr-s-5 {
-		margin-right: 5px
+		margin-right: 5px!important
 	}
 	.mr-s-10 {
-		margin-right: 10px
+		margin-right: 10px!important
 	}
 	.mr-s-15 {
-		margin-right: 15px
+		margin-right: 15px!important
 	}
 	.mr-s-20 {
-		margin-right: 20px
+		margin-right: 20px!important
 	}
 	.mr-s-25 {
-		margin-right: 25px
+		margin-right: 25px!important
 	}
 	.mr-s-30 {
-		margin-right: 30px
+		margin-right: 30px!important
 	}
 	.mr-s-35 {
-		margin-right: 35px
+		margin-right: 35px!important
 	}
 	.mr-s-40 {
-		margin-right: 40px
+		margin-right: 40px!important
 	}
 	.mr-s-45 {
-		margin-right: 45px
+		margin-right: 45px!important
 	}
 	.mr-s-50 {
-		margin-right: 50px
+		margin-right: 50px!important
 	}
 	.mb-s-0 {
 		margin-bottom: 0!important
 	}
 	.mb-s-5 {
-		margin-bottom: 5px
+		margin-bottom: 5px!important
 	}
 	.mb-s-10 {
-		margin-bottom: 10px
+		margin-bottom: 10px!important
 	}
 	.mb-s-15 {
-		margin-bottom: 15px
+		margin-bottom: 15px!important
 	}
 	.mb-s-20 {
-		margin-bottom: 20px
+		margin-bottom: 20px!important
 	}
 	.mb-s-25 {
-		margin-bottom: 25px
+		margin-bottom: 25px!important
 	}
 	.mb-s-30 {
-		margin-bottom: 30px
+		margin-bottom: 30px!important
 	}
 	.mb-s-35 {
-		margin-bottom: 35px
+		margin-bottom: 35px!important
 	}
 	.mb-s-40 {
-		margin-bottom: 40px
+		margin-bottom: 40px!important
 	}
 	.mb-s-45 {
-		margin-bottom: 45px
+		margin-bottom: 45px!important
 	}
 	.mb-s-50 {
-		margin-bottom: 50px
+		margin-bottom: 50px!important
 	}
 	.ml-s-0 {
 		margin-left: 0!important
 	}
 	.ml-s-5 {
-		margin-left: 5px
+		margin-left: 5px!important
 	}
 	.ml-s-10 {
-		margin-left: 10px
+		margin-left: 10px!important
 	}
 	.ml-s-15 {
-		margin-left: 15px
+		margin-left: 15px!important
 	}
 	.ml-s-20 {
-		margin-left: 20px
+		margin-left: 20px!important
 	}
 	.ml-s-25 {
-		margin-left: 25px
+		margin-left: 25px!important
 	}
 	.ml-s-30 {
-		margin-left: 30px
+		margin-left: 30px!important
 	}
 	.ml-s-35 {
-		margin-left: 35px
+		margin-left: 35px!important
 	}
 	.ml-s-40 {
-		margin-left: 40px
+		margin-left: 40px!important
 	}
 	.ml-s-45 {
-		margin-left: 45px
+		margin-left: 45px!important
 	}
 	.ml-s-50 {
-		margin-left: 50px
+		margin-left: 50px!important
 	}
 	.p-s-0 {
 		padding: 0!important
@@ -3345,133 +3423,133 @@ body textarea:required:valid {
 		padding-top: 0!important
 	}
 	.pt-s-5 {
-		padding-top: 5px
+		padding-top: 5px!important
 	}
 	.pt-s-10 {
-		padding-top: 10px
+		padding-top: 10px!important
 	}
 	.pt-s-15 {
-		padding-top: 15px
+		padding-top: 15px!important
 	}
 	.pt-s-20 {
-		padding-top: 20px
+		padding-top: 20px!important
 	}
 	.pt-s-25 {
-		padding-top: 25px
+		padding-top: 25px!important
 	}
 	.pt-s-30 {
-		padding-top: 30px
+		padding-top: 30px!important
 	}
 	.pt-s-35 {
-		padding-top: 35px
+		padding-top: 35px!important
 	}
 	.pt-s-40 {
-		padding-top: 40px
+		padding-top: 40px!important
 	}
 	.pt-s-45 {
-		padding-top: 45px
+		padding-top: 45px!important
 	}
 	.pt-s-50 {
-		padding-top: 50px
+		padding-top: 50px!important
 	}
 	.pr-s-0 {
 		padding-right: 0!important
 	}
 	.pr-s-5 {
-		padding-right: 5px
+		padding-right: 5px!important
 	}
 	.pr-s-10 {
-		padding-right: 10px
+		padding-right: 10px!important
 	}
 	.pr-s-15 {
-		padding-right: 15px
+		padding-right: 15px!important
 	}
 	.pr-s-20 {
-		padding-right: 20px
+		padding-right: 20px!important
 	}
 	.pr-s-25 {
-		padding-right: 25px
+		padding-right: 25px!important
 	}
 	.pr-s-30 {
-		padding-right: 30px
+		padding-right: 30px!important
 	}
 	.pr-s-35 {
-		padding-right: 35px
+		padding-right: 35px!important
 	}
 	.pr-s-40 {
-		padding-right: 40px
+		padding-right: 40px!important
 	}
 	.pr-s-45 {
-		padding-right: 45px
+		padding-right: 45px!important
 	}
 	.pr-s-50 {
-		padding-right: 50px
+		padding-right: 50px!important
 	}
 	.pb-s-0 {
 		padding-bottom: 0!important
 	}
 	.pb-s-5 {
-		padding-bottom: 5px
+		padding-bottom: 5px!important
 	}
 	.pb-s-10 {
-		padding-bottom: 10px
+		padding-bottom: 10px!important
 	}
 	.pb-s-15 {
-		padding-bottom: 15px
+		padding-bottom: 15px!important
 	}
 	.pb-s-20 {
-		padding-bottom: 20px
+		padding-bottom: 20px!important
 	}
 	.pb-s-25 {
-		padding-bottom: 25px
+		padding-bottom: 25px!important
 	}
 	.pb-s-30 {
-		padding-bottom: 30px
+		padding-bottom: 30px!important
 	}
 	.pb-s-35 {
-		padding-bottom: 35px
+		padding-bottom: 35px!important
 	}
 	.pb-s-40 {
-		padding-bottom: 40px
+		padding-bottom: 40px!important
 	}
 	.pb-s-45 {
-		padding-bottom: 45px
+		padding-bottom: 45px!important
 	}
 	.pb-s-50 {
-		padding-bottom: 50px
+		padding-bottom: 50px!important
 	}
 	.pl-s-0 {
 		padding-left: 0!important
 	}
 	.pl-s-5 {
-		padding-left: 5px
+		padding-left: 5px!important
 	}
 	.pl-s-10 {
-		padding-left: 10px
+		padding-left: 10px!important
 	}
 	.pl-s-15 {
-		padding-left: 15px
+		padding-left: 15px!important
 	}
 	.pl-s-20 {
-		padding-left: 20px
+		padding-left: 20px!important
 	}
 	.pl-s-25 {
-		padding-left: 25px
+		padding-left: 25px!important
 	}
 	.pl-s-30 {
-		padding-left: 30px
+		padding-left: 30px!important
 	}
 	.pl-s-35 {
-		padding-left: 35px
+		padding-left: 35px!important
 	}
 	.pl-s-40 {
-		padding-left: 40px
+		padding-left: 40px!important
 	}
 	.pl-s-45 {
-		padding-left: 45px
+		padding-left: 45px!important
 	}
 	.pl-s-50 {
-		padding-left: 50px
+		padding-left: 50px!important
 	}
 	h1, .h1 {
 		font-size: 32px
@@ -3524,6 +3602,18 @@ body textarea:required:valid {
 	}
 	.edges-s-50, .e-s-50 {
 		padding: 0 50px
+	}
+	.colp-s-0 [class*="col-"], .cp-s-0 [class*="col-"] {
+		padding: 0
+	}
+	.colp-s-5 [class*="col-"], .cp-s-5 [class*="col-"] {
+		padding: 0 5px
+	}
+	.colp-s-10 [class*="col-"], .cp-s-10 [class*="col-"] {
+		padding: 0 10px
+	}
+	.colp-s-20 [class*="col-"], .cp-s-20 [class*="col-"] {
+		padding: 0 20px
 	}
 }
 @media only screen and (max-width: 767px) {
@@ -3704,6 +3794,10 @@ body textarea:required:valid {
 		-webkit-justify-content: space-around;
 		justify-content: space-around
 	}
+	.h-xs-sevenly, .h-xs-se, .jc-xs-sevenly, .jc-xs-se {
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly
+	}
 	.vc-xs-top, .vc-xs-t, .ac-xs-start, .ac-xs-s {
 		-webkit-align-content: flex-start;
 		align-content: flex-start
@@ -3784,133 +3878,133 @@ body textarea:required:valid {
 		margin-top: 0!important
 	}
 	.mt-xs-5 {
-		margin-top: 5px
+		margin-top: 5px!important
 	}
 	.mt-xs-10 {
-		margin-top: 10px
+		margin-top: 10px!important
 	}
 	.mt-xs-15 {
-		margin-top: 15px
+		margin-top: 15px!important
 	}
 	.mt-xs-20 {
-		margin-top: 20px
+		margin-top: 20px!important
 	}
 	.mt-xs-25 {
-		margin-top: 25px
+		margin-top: 25px!important
 	}
 	.mt-xs-30 {
-		margin-top: 30px
+		margin-top: 30px!important
 	}
 	.mt-xs-35 {
-		margin-top: 35px
+		margin-top: 35px!important
 	}
 	.mt-xs-40 {
-		margin-top: 40px
+		margin-top: 40px!important
 	}
 	.mt-xs-45 {
-		margin-top: 45px
+		margin-top: 45px!important
 	}
 	.mt-xs-50 {
-		margin-top: 50px
+		margin-top: 50px!important
 	}
 	.mr-xs-0 {
 		margin-right: 0!important
 	}
 	.mr-xs-5 {
-		margin-right: 5px
+		margin-right: 5px!important
 	}
 	.mr-xs-10 {
-		margin-right: 10px
+		margin-right: 10px!important
 	}
 	.mr-xs-15 {
-		margin-right: 15px
+		margin-right: 15px!important
 	}
 	.mr-xs-20 {
-		margin-right: 20px
+		margin-right: 20px!important
 	}
 	.mr-xs-25 {
-		margin-right: 25px
+		margin-right: 25px!important
 	}
 	.mr-xs-30 {
-		margin-right: 30px
+		margin-right: 30px!important
 	}
 	.mr-xs-35 {
-		margin-right: 35px
+		margin-right: 35px!important
 	}
 	.mr-xs-40 {
-		margin-right: 40px
+		margin-right: 40px!important
 	}
 	.mr-xs-45 {
-		margin-right: 45px
+		margin-right: 45px!important
 	}
 	.mr-xs-50 {
-		margin-right: 50px
+		margin-right: 50px!important
 	}
 	.mb-xs-0 {
 		margin-bottom: 0!important
 	}
 	.mb-xs-5 {
-		margin-bottom: 5px
+		margin-bottom: 5px!important
 	}
 	.mb-xs-10 {
-		margin-bottom: 10px
+		margin-bottom: 10px!important
 	}
 	.mb-xs-15 {
-		margin-bottom: 15px
+		margin-bottom: 15px!important
 	}
 	.mb-xs-20 {
-		margin-bottom: 20px
+		margin-bottom: 20px!important
 	}
 	.mb-xs-25 {
-		margin-bottom: 25px
+		margin-bottom: 25px!important
 	}
 	.mb-xs-30 {
-		margin-bottom: 30px
+		margin-bottom: 30px!important
 	}
 	.mb-xs-35 {
-		margin-bottom: 35px
+		margin-bottom: 35px!important
 	}
 	.mb-xs-40 {
-		margin-bottom: 40px
+		margin-bottom: 40px!important
 	}
 	.mb-xs-45 {
-		margin-bottom: 45px
+		margin-bottom: 45px!important
 	}
 	.mb-xs-50 {
-		margin-bottom: 50px
+		margin-bottom: 50px!important
 	}
 	.ml-xs-0 {
 		margin-left: 0!important
 	}
 	.ml-xs-5 {
-		margin-left: 5px
+		margin-left: 5px!important
 	}
 	.ml-xs-10 {
-		margin-left: 10px
+		margin-left: 10px!important
 	}
 	.ml-xs-15 {
-		margin-left: 15px
+		margin-left: 15px!important
 	}
 	.ml-xs-20 {
-		margin-left: 20px
+		margin-left: 20px!important
 	}
 	.ml-xs-25 {
-		margin-left: 25px
+		margin-left: 25px!important
 	}
 	.ml-xs-30 {
-		margin-left: 30px
+		margin-left: 30px!important
 	}
 	.ml-xs-35 {
-		margin-left: 35px
+		margin-left: 35px!important
 	}
 	.ml-xs-40 {
-		margin-left: 40px
+		margin-left: 40px!important
 	}
 	.ml-xs-45 {
-		margin-left: 45px
+		margin-left: 45px!important
 	}
 	.ml-xs-50 {
-		margin-left: 50px
+		margin-left: 50px!important
 	}
 	.p-xs-0 {
 		padding: 0!important
@@ -3919,133 +4013,133 @@ body textarea:required:valid {
 		padding-top: 0!important
 	}
 	.pt-xs-5 {
-		padding-top: 5px
+		padding-top: 5px!important
 	}
 	.pt-xs-10 {
-		padding-top: 10px
+		padding-top: 10px!important
 	}
 	.pt-xs-15 {
-		padding-top: 15px
+		padding-top: 15px!important
 	}
 	.pt-xs-20 {
-		padding-top: 20px
+		padding-top: 20px!important
 	}
 	.pt-xs-25 {
-		padding-top: 25px
+		padding-top: 25px!important
 	}
 	.pt-xs-30 {
-		padding-top: 30px
+		padding-top: 30px!important
 	}
 	.pt-xs-35 {
-		padding-top: 35px
+		padding-top: 35px!important
 	}
 	.pt-xs-40 {
-		padding-top: 40px
+		padding-top: 40px!important
 	}
 	.pt-xs-45 {
-		padding-top: 45px
+		padding-top: 45px!important
 	}
 	.pt-xs-50 {
-		padding-top: 50px
+		padding-top: 50px!important
 	}
 	.pr-xs-0 {
 		padding-right: 0!important
 	}
 	.pr-xs-5 {
-		padding-right: 5px
+		padding-right: 5px!important
 	}
 	.pr-xs-10 {
-		padding-right: 10px
+		padding-right: 10px!important
 	}
 	.pr-xs-15 {
-		padding-right: 15px
+		padding-right: 15px!important
 	}
 	.pr-xs-20 {
-		padding-right: 20px
+		padding-right: 20px!important
 	}
 	.pr-xs-25 {
-		padding-right: 25px
+		padding-right: 25px!important
 	}
 	.pr-xs-30 {
-		padding-right: 30px
+		padding-right: 30px!important
 	}
 	.pr-xs-35 {
-		padding-right: 35px
+		padding-right: 35px!important
 	}
 	.pr-xs-40 {
-		padding-right: 40px
+		padding-right: 40px!important
 	}
 	.pr-xs-45 {
-		padding-right: 45px
+		padding-right: 45px!important
 	}
 	.pr-xs-50 {
-		padding-right: 50px
+		padding-right: 50px!important
 	}
 	.pb-xs-0 {
 		padding-bottom: 0!important
 	}
 	.pb-xs-5 {
-		padding-bottom: 5px
+		padding-bottom: 5px!important
 	}
 	.pb-xs-10 {
-		padding-bottom: 10px
+		padding-bottom: 10px!important
 	}
 	.pb-xs-15 {
-		padding-bottom: 15px
+		padding-bottom: 15px!important
 	}
 	.pb-xs-20 {
-		padding-bottom: 20px
+		padding-bottom: 20px!important
 	}
 	.pb-xs-25 {
-		padding-bottom: 25px
+		padding-bottom: 25px!important
 	}
 	.pb-xs-30 {
-		padding-bottom: 30px
+		padding-bottom: 30px!important
 	}
 	.pb-xs-35 {
-		padding-bottom: 35px
+		padding-bottom: 35px!important
 	}
 	.pb-xs-40 {
-		padding-bottom: 40px
+		padding-bottom: 40px!important
 	}
 	.pb-xs-45 {
-		padding-bottom: 45px
+		padding-bottom: 45px!important
 	}
 	.pb-xs-50 {
-		padding-bottom: 50px
+		padding-bottom: 50px!important
 	}
 	.pl-xs-0 {
 		padding-left: 0!important
 	}
 	.pl-xs-5 {
-		padding-left: 5px
+		padding-left: 5px!important
 	}
 	.pl-xs-10 {
-		padding-left: 10px
+		padding-left: 10px!important
 	}
 	.pl-xs-15 {
-		padding-left: 15px
+		padding-left: 15px!important
 	}
 	.pl-xs-20 {
-		padding-left: 20px
+		padding-left: 20px!important
 	}
 	.pl-xs-25 {
-		padding-left: 25px
+		padding-left: 25px!important
 	}
 	.pl-xs-30 {
-		padding-left: 30px
+		padding-left: 30px!important
 	}
 	.pl-xs-35 {
-		padding-left: 35px
+		padding-left: 35px!important
 	}
 	.pl-xs-40 {
-		padding-left: 40px
+		padding-left: 40px!important
 	}
 	.pl-xs-45 {
-		padding-left: 45px
+		padding-left: 45px!important
 	}
 	.pl-xs-50 {
-		padding-left: 50px
+		padding-left: 50px!important
 	}
 	h1, .h1 {
 		font-size: 28px
@@ -4101,6 +4195,18 @@ body textarea:required:valid {
 	}
 	.data, .data p, .data a, .data span, .data ul, .data ol {
 		font-size: 14px
+	}
+	.colp-xs-0 [class*="col-"], .cp-xs-0 [class*="col-"] {
+		padding: 0
+	}
+	.colp-xs-5 [class*="col-"], .cp-xs-5 [class*="col-"] {
+		padding: 0 5px
+	}
+	.colp-xs-10 [class*="col-"], .cp-xs-10 [class*="col-"] {
+		padding: 0 10px
+	}
+	.colp-xs-20 [class*="col-"], .cp-xs-20 [class*="col-"] {
+		padding: 0 20px
 	}
 	/*If don't need to use - DELETE*/
 	.data table, .data table td, table, table td {
@@ -4279,9 +4385,13 @@ body textarea:required:valid {
 		-webkit-justify-content: space-between;
 		justify-content: space-between
 	}
-	.h-s-saround, .h-s-sa, .jc-s-saround, .jc-s-sa {
+	.h-xxs-saround, .h-xxs-sa, .jc-xxs-saround, .jc-xxs-sa {
 		-webkit-justify-content: space-around;
 		justify-content: space-around
+	}
+	.h-xxs-sevenly, .h-xxs-se, .jc-xxs-sevenly, .jc-xxs-se {
+		-webkit-justify-content: space-evenly;
+		justify-content: space-evenly
 	}
 	.vc-xxs-top, .vc-xxs-t, .ac-xxs-start, .ac-xxs-s {
 		-webkit-align-content: flex-start;
@@ -4363,133 +4473,133 @@ body textarea:required:valid {
 		margin-top: 0!important
 	}
 	.mt-xxs-5 {
-		margin-top: 5px
+		margin-top: 5px!important
 	}
 	.mt-xxs-10 {
-		margin-top: 10px
+		margin-top: 10px!important
 	}
 	.mt-xxs-15 {
-		margin-top: 15px
+		margin-top: 15px!important
 	}
 	.mt-xxs-20 {
-		margin-top: 20px
+		margin-top: 20px!important
 	}
 	.mt-xxs-25 {
-		margin-top: 25px
+		margin-top: 25px!important
 	}
 	.mt-xxs-30 {
-		margin-top: 30px
+		margin-top: 30px!important
 	}
 	.mt-xxs-35 {
-		margin-top: 35px
+		margin-top: 35px!important
 	}
 	.mt-xxs-40 {
-		margin-top: 40px
+		margin-top: 40px!important
 	}
 	.mt-xxs-45 {
-		margin-top: 45px
+		margin-top: 45px!important
 	}
 	.mt-xxs-50 {
-		margin-top: 50px
+		margin-top: 50px!important
 	}
 	.mr-xxs-0 {
 		margin-right: 0!important
 	}
 	.mr-xxs-5 {
-		margin-right: 5px
+		margin-right: 5px!important
 	}
 	.mr-xxs-10 {
-		margin-right: 10px
+		margin-right: 10px!important
 	}
 	.mr-xxs-15 {
-		margin-right: 15px
+		margin-right: 15px!important
 	}
 	.mr-xxs-20 {
-		margin-right: 20px
+		margin-right: 20px!important
 	}
 	.mr-xxs-25 {
-		margin-right: 25px
+		margin-right: 25px!important
 	}
 	.mr-xxs-30 {
-		margin-right: 30px
+		margin-right: 30px!important
 	}
 	.mr-xxs-35 {
-		margin-right: 35px
+		margin-right: 35px!important
 	}
 	.mr-xxs-40 {
-		margin-right: 40px
+		margin-right: 40px!important
 	}
 	.mr-xxs-45 {
-		margin-right: 45px
+		margin-right: 45px!important
 	}
 	.mr-xxs-50 {
-		margin-right: 50px
+		margin-right: 50px!important
 	}
 	.mb-xxs-0 {
 		margin-bottom: 0!important
 	}
 	.mb-xxs-5 {
-		margin-bottom: 5px
+		margin-bottom: 5px!important
 	}
 	.mb-xxs-10 {
-		margin-bottom: 10px
+		margin-bottom: 10px!important
 	}
 	.mb-xxs-15 {
-		margin-bottom: 15px
+		margin-bottom: 15px!important
 	}
 	.mb-xxs-20 {
-		margin-bottom: 20px
+		margin-bottom: 20px!important
 	}
 	.mb-xxs-25 {
-		margin-bottom: 25px
+		margin-bottom: 25px!important
 	}
 	.mb-xxs-30 {
-		margin-bottom: 30px
+		margin-bottom: 30px!important
 	}
 	.mb-xxs-35 {
-		margin-bottom: 35px
+		margin-bottom: 35px!important
 	}
 	.mb-xxs-40 {
-		margin-bottom: 40px
+		margin-bottom: 40px!important
 	}
 	.mb-xxs-45 {
-		margin-bottom: 45px
+		margin-bottom: 45px!important
 	}
 	.mb-xxs-50 {
-		margin-bottom: 50px
+		margin-bottom: 50px!important
 	}
 	.ml-xxs-0 {
 		margin-left: 0!important
 	}
 	.ml-xxs-5 {
-		margin-left: 5px
+		margin-left: 5px!important
 	}
 	.ml-xxs-10 {
-		margin-left: 10px
+		margin-left: 10px!important
 	}
 	.ml-xxs-15 {
-		margin-left: 15px
+		margin-left: 15px!important
 	}
 	.ml-xxs-20 {
-		margin-left: 20px
+		margin-left: 20px!important
 	}
 	.ml-xxs-25 {
-		margin-left: 25px
+		margin-left: 25px!important
 	}
 	.ml-xxs-30 {
-		margin-left: 30px
+		margin-left: 30px!important
 	}
 	.ml-xxs-35 {
-		margin-left: 35px
+		margin-left: 35px!important
 	}
 	.ml-xxs-40 {
-		margin-left: 40px
+		margin-left: 40px!important
 	}
 	.ml-xxs-45 {
-		margin-left: 45px
+		margin-left: 45px!important
 	}
 	.ml-xxs-50 {
-		margin-left: 50px
+		margin-left: 50px!important
 	}
 	.p-xxs-0 {
 		padding: 0!important
@@ -4498,133 +4608,133 @@ body textarea:required:valid {
 		padding-top: 0!important
 	}
 	.pt-xxs-5 {
-		padding-top: 5px
+		padding-top: 5px!important
 	}
 	.pt-xxs-10 {
-		padding-top: 10px
+		padding-top: 10px!important
 	}
 	.pt-xxs-15 {
-		padding-top: 15px
+		padding-top: 15px!important
 	}
 	.pt-xxs-20 {
-		padding-top: 20px
+		padding-top: 20px!important
 	}
 	.pt-xxs-25 {
-		padding-top: 25px
+		padding-top: 25px!important
 	}
 	.pt-xxs-30 {
-		padding-top: 30px
+		padding-top: 30px!important
 	}
 	.pt-xxs-35 {
-		padding-top: 35px
+		padding-top: 35px!important
 	}
 	.pt-xxs-40 {
-		padding-top: 40px
+		padding-top: 40px!important
 	}
 	.pt-xxs-45 {
-		padding-top: 45px
+		padding-top: 45px!important
 	}
 	.pt-xxs-50 {
-		padding-top: 50px
+		padding-top: 50px!important
 	}
 	.pr-xxs-0 {
 		padding-right: 0!important
 	}
 	.pr-xxs-5 {
-		padding-right: 5px
+		padding-right: 5px!important
 	}
 	.pr-xxs-10 {
-		padding-right: 10px
+		padding-right: 10px!important
 	}
 	.pr-xxs-15 {
-		padding-right: 15px
+		padding-right: 15px!important
 	}
 	.pr-xxs-20 {
-		padding-right: 20px
+		padding-right: 20px!important
 	}
 	.pr-xxs-25 {
-		padding-right: 25px
+		padding-right: 25px!important
 	}
 	.pr-xxs-30 {
-		padding-right: 30px
+		padding-right: 30px!important
 	}
 	.pr-xxs-35 {
-		padding-right: 35px
+		padding-right: 35px!important
 	}
 	.pr-xxs-40 {
-		padding-right: 40px
+		padding-right: 40px!important
 	}
 	.pr-xxs-45 {
-		padding-right: 45px
+		padding-right: 45px!important
 	}
 	.pr-xxs-50 {
-		padding-right: 50px
+		padding-right: 50px!important
 	}
 	.pb-xxs-0 {
 		padding-bottom: 0!important
 	}
 	.pb-xxs-5 {
-		padding-bottom: 5px
+		padding-bottom: 5px!important
 	}
 	.pb-xxs-10 {
-		padding-bottom: 10px
+		padding-bottom: 10px!important
 	}
 	.pb-xxs-15 {
-		padding-bottom: 15px
+		padding-bottom: 15px!important
 	}
 	.pb-xxs-20 {
-		padding-bottom: 20px
+		padding-bottom: 20px!important
 	}
 	.pb-xxs-25 {
-		padding-bottom: 25px
+		padding-bottom: 25px!important
 	}
 	.pb-xxs-30 {
-		padding-bottom: 30px
+		padding-bottom: 30px!important
 	}
 	.pb-xxs-35 {
-		padding-bottom: 35px
+		padding-bottom: 35px!important
 	}
 	.pb-xxs-40 {
-		padding-bottom: 40px
+		padding-bottom: 40px!important
 	}
 	.pb-xxs-45 {
-		padding-bottom: 45px
+		padding-bottom: 45px!important
 	}
 	.pb-xxs-50 {
-		padding-bottom: 50px
+		padding-bottom: 50px!important
 	}
 	.pl-xxs-0 {
 		padding-left: 0!important
 	}
 	.pl-xxs-5 {
-		padding-left: 5px
+		padding-left: 5px!important
 	}
 	.pl-xxs-10 {
-		padding-left: 10px
+		padding-left: 10px!important
 	}
 	.pl-xxs-15 {
-		padding-left: 15px
+		padding-left: 15px!important
 	}
 	.pl-xxs-20 {
-		padding-left: 20px
+		padding-left: 20px!important
 	}
 	.pl-xxs-25 {
-		padding-left: 25px
+		padding-left: 25px!important
 	}
 	.pl-xxs-30 {
-		padding-left: 30px
+		padding-left: 30px!important
 	}
 	.pl-xxs-35 {
-		padding-left: 35px
+		padding-left: 35px!important
 	}
 	.pl-xxs-40 {
-		padding-left: 40px
+		padding-left: 40px!important
 	}
 	.pl-xxs-45 {
-		padding-left: 45px
+		padding-left: 45px!important
 	}
 	.pl-xxs-50 {
-		padding-left: 50px
+		padding-left: 50px!important
 	}
 	h1, .h1 {
 		font-size: 24px
@@ -4665,6 +4775,18 @@ body textarea:required:valid {
 	}
 	.edges-xxs-50, .e-xxs-50 {
 		padding: 0 50px
+	}
+	.colp-xxs-0 [class*="col-"], .cp-xxs-0 [class*="col-"] {
+		padding: 0
+	}
+	.colp-xxs-5 [class*="col-"], .cp-xxs-5 [class*="col-"] {
+		padding: 0 5px
+	}
+	.colp-xxs-10 [class*="col-"], .cp-xxs-10 [class*="col-"] {
+		padding: 0 10px
+	}
+	.colp-xxs-20 [class*="col-"], .cp-xxs-20 [class*="col-"] {
+		padding: 0 20px
 	}
 }
 @media only screen and (min-width: 1580px) {
