@@ -1,5 +1,5 @@
 ![ALINE.CSS](https://github.com/ENJOY100/aline.css/blob/master/images/alinelogo(mini).png)
-## Aline - CSS-Grid Framework
+## Aline - CSS-Grid Library
 
 Current Version: `1.0.6`
 
